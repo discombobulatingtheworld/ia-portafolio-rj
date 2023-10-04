@@ -1,0 +1,16 @@
+site_name: Portafolio de Machine Learning
+site_url: https://discombobulatingtheworld.github.io/ia-portafolio-rj/
+nav:
+  - Home: index.md
+  - 01 Introducción:
+    - 01_introduccion\01-definiciones.ipynb
+    - 01_introduccion\02-herramientas.ipynb
+    - 01_introduccion\03-crisp-dm.ipynb
+    - 01_introduccion\04-comparacion-herramientas.ipynb
+    - 01_introduccion\05-dataset.ipynb
+    - 01_introduccion\06-dataset-estadistica.ipynb
+  - 02 Tratamiento de datos:
+    - 02_tratamiento_de_datos\01-rapidminer-tutoriales.ipynb
+plugins:
+    - mkdocs-jupyter
+theme: readthedocs
