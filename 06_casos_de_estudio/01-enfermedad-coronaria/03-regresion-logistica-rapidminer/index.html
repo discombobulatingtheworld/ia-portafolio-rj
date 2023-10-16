@@ -1607,10 +1607,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <h2 id="entrenamiento">Entrenamiento<a class="anchor-link" href="#entrenamiento">¶</a></h2><p>Para la etapa de entrenamiento, utilizaremos el operador <code>Logistic Regression</code> para entrenar el modelo. En este caso, utilizaremos un <code>Cross Validation</code> de 10 folds para evaluar el modelo, y una normalización de los datos utilizando el metodo <code>z-normalization</code> y el operador <code>Normalize</code> previo a entrenar el modelo para los datos de entrenamiento, y previa a probar el modelo para los datos de prueba.</p>
 <p>El modelo de preprocesamiento creado por el operador <code>Normalize</code> es utilizado luego en la etapa de prueba para normalizar los datos de prueba. La aplicación tanto del modelo de preprocesamiento como del modelo predictivo en la etapa de prueba se realiza utilizando 2 operadores <code>Apply Model</code>.</p>
 <h2 id="proceso-completo">Proceso Completo<a class="anchor-link" href="#proceso-completo">¶</a></h2><p>El proceso completo se puede ver en las siguientes imagenes:</p>
-<p><img alt="Proceso completo 01" src="./images/rm-rl-01.png"/>
-<img alt="Proceso completo 02" src="./images/rm-rl-02.png"/>
-<img alt="Proceso completo 03" src="./images/rm-rl-03.png"/>
-<img alt="Proceso completo 04" src="./images/rm-rl-04.png"/></p>
+<p><img alt="Proceso completo 01" src="images/rm-rl-01.png"/>
+<img alt="Proceso completo 02" src="images/rm-rl-02.png"/>
+<img alt="Proceso completo 03" src="images/rm-rl-03.png"/>
+<img alt="Proceso completo 04" src="images/rm-rl-04.png"/></p>
 <h2 id="evaluacion">Evaluación<a class="anchor-link" href="#evaluacion">¶</a></h2><p>Una vez ejecutado el proceso, podemos ver los resultados de la evaluación del modelo en la pestaña <code>Results</code>. Aquí podemos ver la precisión del modelo y su matriz de confusión en la salida de <code>Performance Vector</code>:</p>
 <p><img alt="Evaluación 01" src="./images/rm-rl-05.png"/></p>
 <p>El resultado es una precisión del 91.63%. Considero que este es un buen resultado, dado la mala calidad de los datos, con muchos valores faltantes y atributos no relevantes.</p>
