@@ -2,37 +2,44 @@ site_name: Portafolio de Machine Learning
 site_url: https://discombobulatingtheworld.github.io/ia-portafolio-rj/
 nav:
   - Home: index.md
-  - 01 Introducción:
+  - Introducción:
     - 01_introduccion\01-definiciones.ipynb
     - 01_introduccion\02-herramientas.ipynb
     - 01_introduccion\03-crisp-dm.ipynb
     - 01_introduccion\04-comparacion-herramientas.ipynb
     - 01_introduccion\05-dataset.ipynb
     - 01_introduccion\06-dataset-estadistica.ipynb
-  - 02 Tratamiento de datos:
+  - Tratamiento de datos:
     - 02_tratamiento_de_datos\01-rapidminer-tutoriales.ipynb
-  - 03 Algoritmos Lineales: 
+  - Algoritmos Lineales: 
     - 03_algoritmos_lineales\00-introduccion.ipynb
     - 03_algoritmos_lineales\01-descenso-gradiente.ipynb
     - 03_algoritmos_lineales\02-regresion-lineal.ipynb
     - 03_algoritmos_lineales\03-regresion-logistica.ipynb
     - 03_algoritmos_lineales\04-analisis-discriminante-lineal.ipynb
-  - 04 Algoritmos No Lineales:
+  - Algoritmos No Lineales:
     - 04_algoritmos_no_lineales\00-introduccion.ipynb
     - 04_algoritmos_no_lineales\01-knn.ipynb
     - 04_algoritmos_no_lineales\02-naive-bayes.ipynb
-  - 05 Validación:
+  - Validación:
     - 05_validacion\00-introduccion.ipynb
     - 05_validacion\01-error-prueba-vs-entrenamiento.ipynb
     - 05_validacion\02-validacion-dividida.ipynb
     - 05_validacion\03-validacion-cruzada.ipynb
     - 05_validacion\04-contaminacion-accidental.ipynb
-  - 06 Casos de Estudio:
-    - 01 Enfermedad Cardíaca:
+  - Casos de Estudio:
+    - Enfermedad Cardíaca:
       - 06_casos_de_estudio\01-enfermedad-coronaria\01-introduccion.ipynb
       - 06_casos_de_estudio\01-enfermedad-coronaria\02-datos.ipynb
       - 06_casos_de_estudio\01-enfermedad-coronaria\03-regresion-logistica-rapidminer.ipynb
       - 06_casos_de_estudio\01-enfermedad-coronaria\04-regresion-logistica-python.ipynb
 plugins:
     - mkdocs-jupyter
-theme: material
+    - search
+    - tags
+theme: 
+  name: material
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: deep purple
