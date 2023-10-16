@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://discombobulatingtheworld.github.io/ia-portafolio-rj/01_introduccion/02-herramientas/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://discombobulatingtheworld.github.io/ia-portafolio-rj/04_algoritmos_no_lineales/02-naive-bayes/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Plataformas y Herramientas - Portafolio de Machine Learning</title>
+    <title>Bayesiano Ingenuo - Portafolio de Machine Learning</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Plataformas y Herramientas";
-        var mkdocs_page_input_path = "01_introduccion\\02-herramientas.ipynb";
-        var mkdocs_page_url = "/ia-portafolio-rj/01_introduccion/02-herramientas/";
+        var mkdocs_page_name = "Bayesiano Ingenuo";
+        var mkdocs_page_input_path = "04_algoritmos_no_lineales\\02-naive-bayes.ipynb";
+        var mkdocs_page_url = "/ia-portafolio-rj/04_algoritmos_no_lineales/02-naive-bayes/";
       </script>
     
     <!--[if lt IE 9]>
@@ -40,32 +40,18 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">01 Introducción</span></p>
-              <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../01-definiciones/">Que es "Machine Learining"</a>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/01-definiciones/">Que es "Machine Learining"</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Plataformas y Herramientas</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#rapidminer">RapidMiner</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#scikit-learn">SciKit Learn</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#tensorflow">TensorFlow</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#azure-machine-learning">Azure Machine Learning</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#weka">Weka</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#knime">KNIME</a>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/02-herramientas/">Plataformas y Herramientas</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../03-crisp-dm/">CRISP-DM</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/03-crisp-dm/">CRISP-DM</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../04-comparacion-herramientas/">Comparacion de Algoritmos en Herramientas</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/04-comparacion-herramientas/">Comparacion de Algoritmos en Herramientas</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../05-dataset/">Vista de un Dataset</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/05-dataset/">Vista de un Dataset</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../06-dataset-estadistica/">Estadistica de un Dataset</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/06-dataset-estadistica/">Estadistica de un Dataset</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">02 Tratamiento de datos</span></p>
@@ -87,12 +73,24 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">04 Algoritmos No Lineales</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../04_algoritmos_no_lineales/00-introduccion/">Algoritmos no Lineales</a>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../00-introduccion/">Algoritmos no Lineales</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../04_algoritmos_no_lineales/01-knn/">K Vecinos Más Cercanos (k-NN)</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-knn/">K Vecinos Más Cercanos (k-NN)</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../04_algoritmos_no_lineales/02-naive-bayes/">Bayesiano Ingenuo</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Bayesiano Ingenuo</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#teorema-de-bayes">Teorema de Bayes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#representacion-del-modelo">Representación del Modelo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#entrenamiento-del-modelo">Entrenamiento del Modelo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#prediccion-del-modelo">Predicción del modelo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#preparacion-de-los-datos">Preparación de los Datos</a>
+    </li>
+    </ul>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">05 Validación</span></p>
@@ -137,8 +135,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">01 Introducción</li>
-      <li class="breadcrumb-item active">Plataformas y Herramientas</li>
+          <li class="breadcrumb-item">04 Algoritmos No Lineales</li>
+      <li class="breadcrumb-item active">Bayesiano Ingenuo</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -554,16 +552,45 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="plataformas-y-herramientas">Plataformas y Herramientas<a class="anchor-link" href="#plataformas-y-herramientas">¶</a></h1><h3 id="rapidminer"><a href="https://rapidminer.com">RapidMiner</a><a class="anchor-link" href="#rapidminer">¶</a></h3><p>RapidMiner es una herramienta que provee procedimientos de Data Mining y Machine Learning. Permite cargar datos, aplicar transformaciones a los mismos, pre procesamiento de datos, visualizacion, analisis predictivo y modelado estadistico, evaluacion, y despliegue de modelos.</p>
-<p>Es una herramienta no-code que permite realizar todas estas tareas sin necesidad de escribir codigo. Tanto desarrolladores como usuarios de negocio pueden utilizar RapidMiner para crear modelos de Machine Learning.</p>
-<h3 id="scikit-learn"><a href="https://scikit-learn.org/stable/">SciKit Learn</a><a class="anchor-link" href="#scikit-learn">¶</a></h3><p>SciKit Learn es una libreria de Machine Learning de codigo abierto. Soporta tanto Aprendizaje Supervisado como Aprendizaje No Supervisado. Tambien provee herramientas para pre procesamiento de datos, seleccion de modelos, evaluacion de modelos, entre otras utilidades. Esta libreria esta disponible para Python y fue diseñada para trabajar con otras librerias de Python como NumPy y SciPy.</p>
-<h3 id="tensorflow"><a href="https://www.tensorflow.org/">TensorFlow</a><a class="anchor-link" href="#tensorflow">¶</a></h3><p>TensorFlow es una plataforma de extremo a extremo para Machine Learning de codigo abierto. Tiene un ecosistema completo de herramientas, librerias y recursos de la comunidad que permite a los investigadores de Machine Learning crear y desplegar aplicaciones de Machine Learning.</p>
-<p>Originalmente desarrollado por investigadores e ingenieros que trabajan en el equipo de Google Brain para avanzar su investigacion en Machine Learning, y redes neurales, pero la herramienta es versatil y puede ser utilizada en una amplia variedad de otros dominios.</p>
-<h3 id="azure-machine-learning"><a href="https://azure.microsoft.com/en-us/services/machine-learning/">Azure Machine Learning</a><a class="anchor-link" href="#azure-machine-learning">¶</a></h3><p>Azure Machine Learning es un servicio de Machine Learning en la nube que permite a los desarrolladores y cientificos de datos crear, y desplegar modelos de Machine Learning. Permite crear modelos utilizando un entorno de desarrollo basado en notebooks.</p>
-<p>Es compatible con modelos de Machine Learning de codigo abierto como TensorFlow, PyTorch y scikit-learn.</p>
-<h3 id="weka"><a href="https://www.cs.waikato.ac.nz/ml/weka/">Weka</a><a class="anchor-link" href="#weka">¶</a></h3><p>Weka es una herramienta de Machine Learning de codigo abierto escrita en Java. Contiene herramientas para preparacion de datos, clasificacion, regresion, clustering, y visualizacion. Es facil de usar gracias a su interfaz grafica, y gracias a estar completamente implementada en Java, es portable y puede ser ejecutada en cualquier plataforma.</p>
-<h3 id="knime"><a href="https://www.knime.com/">KNIME</a><a class="anchor-link" href="#knime">¶</a></h3><p>KNIME ofrece una plataforma completa de extremo a extremo para Machine Learning y Data Science. Permite crear modelos analiticos, y desplegarlos en produccion, facilitando la integracion de modelos de Machine Learning en aplicaciones de negocio.</p>
-<p>Utiliza una interface intuitiva no-code/low-code que permite a los usuarios de negocio y a los desarrolladores crear modelos de Machine Learning sin necesidad de escribir codigo.</p>
+<h1 id="bayesiano-ingenuo">Bayesiano Ingenuo<a class="anchor-link" href="#bayesiano-ingenuo">¶</a></h1><p>El algoritmo Bayesiano Ingenuo, o Naive Bayes, es un algoritmo de aprendizaje supervisado enfocado a la clasificación. En su núcleo, es un clasificador probabilístico que se basa en el teorema de Bayes, de ahi su nombre. Utiliza las relaciones probabilisticas entre los atributos de entrada y de salida para predecir la clase de una instancia.</p>
+<p>Este algoritmo asume la independencia entre los atributos de entrada, por lo que se le llama ingenuo. A pesar de esta suposición, el algoritmo funciona lo suficiente bien en la mayoría de los casos donde se presente una ligera correlación entre los atributos. Se requiere igualmente remover aquellos atributos que estén altamente correlacionados.</p>
+<h2 id="teorema-de-bayes">Teorema de Bayes<a class="anchor-link" href="#teorema-de-bayes">¶</a></h2><p>El teorema de Bayes es una ecuación que describe la relación de probabilidades condicionales. Su formulación es la siguiente:</p>
+<p>$$P(A|B) = \frac{P(B|A)\cdot P(A)}{P(B)}$$</p>
+<p>Generalizando para una entrada $X$ con $n$ atributos, se tiene:</p>
+<p>$$P(Y|X) = \frac{P(Y)\cdot P(X_1|Y)\cdot P(X_2|Y)\cdot ... \cdot P(X_n|Y)}{P(X)}$$</p>
+<h2 id="representacion-del-modelo">Representación del Modelo<a class="anchor-link" href="#representacion-del-modelo">¶</a></h2><p>El modelo de Naive Bayes se representa como un conjunto de tablas de frecuencias. En esta se almacenan las probabilidades de cada atributo para cada clase de salida, asi como la probabilidad de cada clase de salida.</p>
+<h2 id="entrenamiento-del-modelo">Entrenamiento del Modelo<a class="anchor-link" href="#entrenamiento-del-modelo">¶</a></h2><p>El entrenamiento del modelo consiste en calcular las probabilidades de cada atributo para cada clase de salida, asi como la probabilidad de cada clase de salida. Para esto, se calcula cada dato de la siguiente manera:</p>
+<p>$$\begin{align} &amp; P(Y) = \frac{N_Y}{N} \\ &amp; P(X_i|Y) = \frac{N_{Y,X_i}}{N_Y} \end{align}$$</p>
+<p>Donde $N_Y$ es el número de instancias de la clase $Y$, $N$ es el número total de instancias, y $N_{Y,X_i}$ es el número de instancias de la clase $Y$ que tienen el valor $X_i$ en el atributo $i$.</p>
+<p>Con estos datos se construyen tablas de frecuencia para cada atributo, para cada valor posible, para cada clase de salida.</p>
+<h2 id="prediccion-del-modelo">Predicción del modelo<a class="anchor-link" href="#prediccion-del-modelo">¶</a></h2><p>Para predecir la clase de una instancia, se calcula la probabilidad de cada clase de salida para la instancia, y se elige la clase con mayor probabilidad. Esto se calcula de la siguiente manera:</p>
+<p>$$P(Y=k|X) = \frac{P(Y=k)\cdot P(X_1|Y=k)\cdot P(X_2|Y=k)\cdot ... \cdot P(X_n|Y=k)}{P(X)}$$</p>
+<p>Donde $k$ es la clase de salida, $X$ es la instancia, $P(Y=k)$ es la probabilidad de la clase $k$, $P(X_i|Y=k)$ es la probabilidad del atributo $i$ para la clase $k$, y $P(X)$ es la probabilidad de la instancia $X$.</p>
+<p>Dadas 2 clases de salida, se calcula la probabilidad de cada clase, y se obtiene un conjunto de 2 probabilidades:</p>
+<p>$$\begin{align} &amp; P(Y=k_1|X) = \frac{\alpha}{P(X)} \\ &amp; P(Y=k_2|X) = \frac{\beta}{P(X)} \end{align}$$</p>
+<p>Aqui, $P(X)$ resulta ser un termino normalizador, por lo que se puede ignorar. Para obtener las probabilidades reales, se ignora $P(X)$ y se normaliza $\alpha$ y $\beta$ de la siguiente manera:</p>
+<p>$$\begin{align} &amp; P(Y=k_1|X) = \frac{\alpha}{\alpha + \beta} \\ &amp; P(Y=k_2|X) = \frac{\beta}{\alpha + \beta} \end{align}$$</p>
+<p>Habiendo obtenido las probabilidades de cada clase, se elige la clase con mayor probabilidad.</p>
+<h2 id="preparacion-de-los-datos">Preparación de los Datos<a class="anchor-link" href="#preparacion-de-los-datos">¶</a></h2><p>Este algoritmo requiere ciertas características de las datos para funcionar correctamente:</p>
+<ul>
+<li><strong>Conjunto de entrenamiento incompleto</strong></li>
+</ul>
+<p>El conjunto de entrenamiento debe contener todas las clases para todos los atributos. En el caso de un atributo no tenga una clase, el algoritmo asume que la probabilidad de ese atributo para esa clase es 0. Debido a esto, es necesario que el conjunto de entrenamiento sea representativo de la población.</p>
+<p>Es posible tolerar la ausencia de clases en el conjunto de entrenamiento, pero esto requiere de un tratamiento especial. Se debe asignar probabilidades pequeñas a las clases faltantes, y se debe tener cuidado de no asignar probabilidades de 0 a ninguna clase, para no descartarlos por completo. Realizamos esto tomando $p_1$, $p_2$, ..., $p_n$ tales que su suma sea 1, y $\mu$ una probabilidad pequeña. Entonces, la probabilidad de cada clase es:</p>
+<p>$$P(X_i|Y) = \frac{x_i + \mu \cdot p_1}{y_i + \mu}$$</p>
+<p>Donde $x_i$ es el numerador de la probabilidad sin corrección, y $y_i$ es el denominador. Esto se llama corrección de Laplace.</p>
+<ul>
+<li><strong>Atributos continuos</strong></li>
+</ul>
+<p>Este algoritmo, debido a su utilización de probabilidades, si es aplicado a atributos continuos, se llega al resultado de que la probabilidad de un valor concreto es 0. Esto se debe a que la probabilidad de un valor concreto es 0 en una distribución continua. Para evitar esto, se puede discretizar los atributos continuos, pero esto resulta en el problema de que una decision de discretización arbitraria puede afectar la precisión de la predicción. Para solucionar esto, se recomienda utilizar una funcion de densidad de probabilidad.</p>
+<p>Asumimos una distribución normal de los datos en la probabilidad del atributo numérico y aplicamos la función siguiente:</p>
+<p>$$f(x) = \frac{1}{\sqrt{2\pi\sigma}}e^{\frac{(x-\mu)^2}{2\sigma^2}}$$</p>
+<p>Donde $\mu$ es la media de los datos, y $\sigma$ es la desviación estándar.</p>
+<p>En caso de que la distribución de los datos no sea normal, se puede utilizar una función de densidad de probabilidad diferente.</p>
+<ul>
+<li><strong>Atributos independientes</strong></li>
+</ul>
+<p>El teorema de Bayes asume que los atributos son independientes entre si. Esto no es cierto en la mayoría de los casos, pero el algoritmo funciona lo suficientemente bien en la mayoría de los casos donde se presente una ligera correlación entre los atributos. Se requiere igualmente remover aquellos atributos que estén altamente correlacionados.</p>
 </div>
 </div>
 </div>
@@ -579,8 +606,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../01-definiciones/" class="btn btn-neutral float-left" title="Que es "Machine Learining""><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../03-crisp-dm/" class="btn btn-neutral float-right" title="CRISP-DM">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../01-knn/" class="btn btn-neutral float-left" title="K Vecinos Más Cercanos (k-NN)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../05_validacion/00-introduccion/" class="btn btn-neutral float-right" title="Validación de Modelos">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -603,10 +630,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../01-definiciones/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../01-knn/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../03-crisp-dm/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../05_validacion/00-introduccion/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

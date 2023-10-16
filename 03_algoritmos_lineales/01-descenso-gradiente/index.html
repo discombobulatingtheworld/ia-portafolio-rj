@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://discombobulatingtheworld.github.io/ia-portafolio-rj/01_introduccion/02-herramientas/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://discombobulatingtheworld.github.io/ia-portafolio-rj/03_algoritmos_lineales/01-descenso-gradiente/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Plataformas y Herramientas - Portafolio de Machine Learning</title>
+    <title>Descenso de Gradiente - Portafolio de Machine Learning</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Plataformas y Herramientas";
-        var mkdocs_page_input_path = "01_introduccion\\02-herramientas.ipynb";
-        var mkdocs_page_url = "/ia-portafolio-rj/01_introduccion/02-herramientas/";
+        var mkdocs_page_name = "Descenso de Gradiente";
+        var mkdocs_page_input_path = "03_algoritmos_lineales\\01-descenso-gradiente.ipynb";
+        var mkdocs_page_url = "/ia-portafolio-rj/03_algoritmos_lineales/01-descenso-gradiente/";
       </script>
     
     <!--[if lt IE 9]>
@@ -40,32 +40,18 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">01 Introducción</span></p>
-              <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../01-definiciones/">Que es "Machine Learining"</a>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/01-definiciones/">Que es "Machine Learining"</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Plataformas y Herramientas</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#rapidminer">RapidMiner</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#scikit-learn">SciKit Learn</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#tensorflow">TensorFlow</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#azure-machine-learning">Azure Machine Learning</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#weka">Weka</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#knime">KNIME</a>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/02-herramientas/">Plataformas y Herramientas</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../03-crisp-dm/">CRISP-DM</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/03-crisp-dm/">CRISP-DM</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../04-comparacion-herramientas/">Comparacion de Algoritmos en Herramientas</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/04-comparacion-herramientas/">Comparacion de Algoritmos en Herramientas</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../05-dataset/">Vista de un Dataset</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/05-dataset/">Vista de un Dataset</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../06-dataset-estadistica/">Estadistica de un Dataset</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/06-dataset-estadistica/">Estadistica de un Dataset</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">02 Tratamiento de datos</span></p>
@@ -74,16 +60,26 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">03 Algoritmos Lineales</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../03_algoritmos_lineales/00-introduccion/">Algoritmos Lineales</a>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../00-introduccion/">Algoritmos Lineales</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../03_algoritmos_lineales/01-descenso-gradiente/">Descenso de Gradiente</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Descenso de Gradiente</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#proceso">Proceso</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#descenso-de-gradiente-por-lotes">Descenso de Gradiente por Lotes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#descenso-de-gradiente-estocastico">Descenso de Gradiente Estocástico</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#consejos-para-el-uso">Consejos para el Uso</a>
+    </li>
+    </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../03_algoritmos_lineales/02-regresion-lineal/">Regresión Lineal</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-regresion-lineal/">Regresión Lineal</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../03_algoritmos_lineales/03-regresion-logistica/">Regresión Logística</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-regresion-logistica/">Regresión Logística</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../03_algoritmos_lineales/04-analisis-discriminante-lineal/">Análisis de Discriminante Lineal</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-analisis-discriminante-lineal/">Análisis de Discriminante Lineal</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">04 Algoritmos No Lineales</span></p>
@@ -137,8 +133,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">01 Introducción</li>
-      <li class="breadcrumb-item active">Plataformas y Herramientas</li>
+          <li class="breadcrumb-item">03 Algoritmos Lineales</li>
+      <li class="breadcrumb-item active">Descenso de Gradiente</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -554,16 +550,27 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="plataformas-y-herramientas">Plataformas y Herramientas<a class="anchor-link" href="#plataformas-y-herramientas">¶</a></h1><h3 id="rapidminer"><a href="https://rapidminer.com">RapidMiner</a><a class="anchor-link" href="#rapidminer">¶</a></h3><p>RapidMiner es una herramienta que provee procedimientos de Data Mining y Machine Learning. Permite cargar datos, aplicar transformaciones a los mismos, pre procesamiento de datos, visualizacion, analisis predictivo y modelado estadistico, evaluacion, y despliegue de modelos.</p>
-<p>Es una herramienta no-code que permite realizar todas estas tareas sin necesidad de escribir codigo. Tanto desarrolladores como usuarios de negocio pueden utilizar RapidMiner para crear modelos de Machine Learning.</p>
-<h3 id="scikit-learn"><a href="https://scikit-learn.org/stable/">SciKit Learn</a><a class="anchor-link" href="#scikit-learn">¶</a></h3><p>SciKit Learn es una libreria de Machine Learning de codigo abierto. Soporta tanto Aprendizaje Supervisado como Aprendizaje No Supervisado. Tambien provee herramientas para pre procesamiento de datos, seleccion de modelos, evaluacion de modelos, entre otras utilidades. Esta libreria esta disponible para Python y fue diseñada para trabajar con otras librerias de Python como NumPy y SciPy.</p>
-<h3 id="tensorflow"><a href="https://www.tensorflow.org/">TensorFlow</a><a class="anchor-link" href="#tensorflow">¶</a></h3><p>TensorFlow es una plataforma de extremo a extremo para Machine Learning de codigo abierto. Tiene un ecosistema completo de herramientas, librerias y recursos de la comunidad que permite a los investigadores de Machine Learning crear y desplegar aplicaciones de Machine Learning.</p>
-<p>Originalmente desarrollado por investigadores e ingenieros que trabajan en el equipo de Google Brain para avanzar su investigacion en Machine Learning, y redes neurales, pero la herramienta es versatil y puede ser utilizada en una amplia variedad de otros dominios.</p>
-<h3 id="azure-machine-learning"><a href="https://azure.microsoft.com/en-us/services/machine-learning/">Azure Machine Learning</a><a class="anchor-link" href="#azure-machine-learning">¶</a></h3><p>Azure Machine Learning es un servicio de Machine Learning en la nube que permite a los desarrolladores y cientificos de datos crear, y desplegar modelos de Machine Learning. Permite crear modelos utilizando un entorno de desarrollo basado en notebooks.</p>
-<p>Es compatible con modelos de Machine Learning de codigo abierto como TensorFlow, PyTorch y scikit-learn.</p>
-<h3 id="weka"><a href="https://www.cs.waikato.ac.nz/ml/weka/">Weka</a><a class="anchor-link" href="#weka">¶</a></h3><p>Weka es una herramienta de Machine Learning de codigo abierto escrita en Java. Contiene herramientas para preparacion de datos, clasificacion, regresion, clustering, y visualizacion. Es facil de usar gracias a su interfaz grafica, y gracias a estar completamente implementada en Java, es portable y puede ser ejecutada en cualquier plataforma.</p>
-<h3 id="knime"><a href="https://www.knime.com/">KNIME</a><a class="anchor-link" href="#knime">¶</a></h3><p>KNIME ofrece una plataforma completa de extremo a extremo para Machine Learning y Data Science. Permite crear modelos analiticos, y desplegarlos en produccion, facilitando la integracion de modelos de Machine Learning en aplicaciones de negocio.</p>
-<p>Utiliza una interface intuitiva no-code/low-code que permite a los usuarios de negocio y a los desarrolladores crear modelos de Machine Learning sin necesidad de escribir codigo.</p>
+<h1 id="descenso-de-gradiente">Descenso de Gradiente<a class="anchor-link" href="#descenso-de-gradiente">¶</a></h1><p>El descenso de gradiente es un algoritmo de optimización simple que permite encontrar valores de parametros para una funcion $f$ que minimicen una funcion de costo. Se puede utilizar en conjunto con cualquier algoritmo de machine learning, pero es mejor usado cuando los parametros no pueden ser calculados analíticamente, requiriendo la utilización de un algoritmo de optimización.</p>
+<h2 id="proceso">Proceso<a class="anchor-link" href="#proceso">¶</a></h2><p>El proceso esta basado en la idea de seleccionar parametros aleatorios y luego ir actualizandolos en la dirección que minimice la funcion de costo. La actualización de los parametros se realiza de la siguiente manera:</p>
+<ol>
+<li>Comenzamos por valores iniciales para todos los parametros, tomando valores iguales a 0.0 o valores aleatorios pequeños.</li>
+<li>Introducimos esos parametros en la funcion $f$ con los parametros elegidos, y calculamos el costo.</li>
+<li>Calculamos la derivada de la funcion de costo y encontramos la dirección hacia la cual esta decrece mas rapidamente.</li>
+<li>Actualizamos los parametros en la dirección encontrada, multiplicando la derivada por una tasa de aprendizaje y restando el resultado a los parametros.</li>
+<li>Repetimos el proceso hasta que la funcion de costo deje de decrecer o alcance un mínimo.</li>
+</ol>
+<p>Este proceso requiere conocer la funcion que buscamos optimizar, o la derivada de la funcion de costo.</p>
+<h2 id="descenso-de-gradiente-por-lotes">Descenso de Gradiente por Lotes<a class="anchor-link" href="#descenso-de-gradiente-por-lotes">¶</a></h2><p>Un algoritmo de aprendizaje supervisado intenta encontrar una funcion $f$ que mapee entrada $X$ a salida $Y$, tanto para algoritmos de clasificación como de regresion. Algunos de estos algoritmos utilizan coeficientes para la estimación de $f$, y pueden requerir la optimización de estos coeficientes para encontrar la mejor estimación de $f$. Para esto es necesario evaluar que tan cercana es la estimación a $f$. Esto se realiza utilizando una funcion de costo, que mide la diferencia entre la estimación y la salida real. Luego calculamos la suma o el promedio del error y lo utilizamos como el costo de la estimación. Aplicamos este proceso a todos los coeficientes de la funcion y obtenemos la derivada para cada uno de ellos. Luego actualizamos los coeficientes con el proceso anteriormente descrito.</p>
+<p>En cada iteración del proceso, procesamos todos los ejemplos en el conjunto de datos de entrenamiento, hasta que el costo deje de decrecer o alcance un mínimo. Este proceso es llamado descenso de gradiente por lotes, ya que los coeficientes son actualizados basados en el error de todos los ejemplos en el conjunto de datos de entrenamiento.</p>
+<h2 id="descenso-de-gradiente-estocastico">Descenso de Gradiente Estocástico<a class="anchor-link" href="#descenso-de-gradiente-estocastico">¶</a></h2><p>A medida crece el conjunto de entrenamiento, el costo computacional del descenso de gradiente crece, debido a que debe calcular el costo de cada ejemplo en el conjunto de datos de entrenamiento para cada iteración. Una alternativa es el actualizar los coeficientes luego de cada ejemplo en el conjunto de datos de entrenamiento.</p>
+<p>Este proceso es llamado descenso de gradiente estocástico debido a que los ejemplos del conjunto de datos de entrenamiento son procesados en orden aleatorio. Cada ejemplo es procesado individualmente, y el costo es calculado para cada ejemplo. Los coeficientes son actualizados basados en el error de cada ejemplo. Este proceso suele obtener buenos resultados luego de pocas iteraciones por el conjunto completo.</p>
+<h2 id="consejos-para-el-uso">Consejos para el Uso<a class="anchor-link" href="#consejos-para-el-uso">¶</a></h2><ul>
+<li>Graficar el costo a lo largo de las iteraciones para asegurarse que esta decreciendo. Si no lo hace, reducir la tasa de aprendizaje.</li>
+<li>Probar tasas de aprendizaje variadas, como 0.1, 0.01, 0.001, 0.0001, etc. Si la tasa de aprendizaje es muy pequeña, el algoritmo puede demorar mucho en converger. Si es muy grande, el algoritmo puede incrementar el costo.</li>
+<li>Escalar los datos de entrada. El descenso de gradiente funciona mejor cuando los datos de entrada están escalados a rangos similares, como por ejemplo entre 0 y 1. De lo contrario, el algoritmo puede demorar mucho en converger.</li>
+<li>El descenso de gradiente estocástico no precisa muchas pasadas por el conjunto de datos de entrenamiento completo, de 1 a 10 pasadas suele ser suficiente.</li>
+<li>En el caso de utilizar el descenso de gradiente estocástico, el graficar el costo despues de cada iteración puede ser muy ruidoso. Una alternativa es graficar el costo despues de cierto intervalo de iteraciones, y tomar el promedio de los costos en ese intervalo.</li>
+</ul>
 </div>
 </div>
 </div>
@@ -579,8 +586,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../01-definiciones/" class="btn btn-neutral float-left" title="Que es "Machine Learining""><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../03-crisp-dm/" class="btn btn-neutral float-right" title="CRISP-DM">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../00-introduccion/" class="btn btn-neutral float-left" title="Algoritmos Lineales"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../02-regresion-lineal/" class="btn btn-neutral float-right" title="Regresión Lineal">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -603,10 +610,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../01-definiciones/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../00-introduccion/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../03-crisp-dm/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../02-regresion-lineal/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://discombobulatingtheworld.github.io/ia-portafolio-rj/01_introduccion/02-herramientas/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://discombobulatingtheworld.github.io/ia-portafolio-rj/03_algoritmos_lineales/03-regresion-logistica/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Plataformas y Herramientas - Portafolio de Machine Learning</title>
+    <title>Regresión Logística - Portafolio de Machine Learning</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Plataformas y Herramientas";
-        var mkdocs_page_input_path = "01_introduccion\\02-herramientas.ipynb";
-        var mkdocs_page_url = "/ia-portafolio-rj/01_introduccion/02-herramientas/";
+        var mkdocs_page_name = "Regresi\u00f3n Log\u00edstica";
+        var mkdocs_page_input_path = "03_algoritmos_lineales\\03-regresion-logistica.ipynb";
+        var mkdocs_page_url = "/ia-portafolio-rj/03_algoritmos_lineales/03-regresion-logistica/";
       </script>
     
     <!--[if lt IE 9]>
@@ -40,32 +40,18 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">01 Introducción</span></p>
-              <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../01-definiciones/">Que es "Machine Learining"</a>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/01-definiciones/">Que es "Machine Learining"</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Plataformas y Herramientas</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#rapidminer">RapidMiner</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#scikit-learn">SciKit Learn</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#tensorflow">TensorFlow</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#azure-machine-learning">Azure Machine Learning</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#weka">Weka</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#knime">KNIME</a>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/02-herramientas/">Plataformas y Herramientas</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../03-crisp-dm/">CRISP-DM</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/03-crisp-dm/">CRISP-DM</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../04-comparacion-herramientas/">Comparacion de Algoritmos en Herramientas</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/04-comparacion-herramientas/">Comparacion de Algoritmos en Herramientas</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../05-dataset/">Vista de un Dataset</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/05-dataset/">Vista de un Dataset</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../06-dataset-estadistica/">Estadistica de un Dataset</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/06-dataset-estadistica/">Estadistica de un Dataset</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">02 Tratamiento de datos</span></p>
@@ -74,16 +60,26 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">03 Algoritmos Lineales</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../03_algoritmos_lineales/00-introduccion/">Algoritmos Lineales</a>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../00-introduccion/">Algoritmos Lineales</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../03_algoritmos_lineales/01-descenso-gradiente/">Descenso de Gradiente</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-descenso-gradiente/">Descenso de Gradiente</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../03_algoritmos_lineales/02-regresion-lineal/">Regresión Lineal</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-regresion-lineal/">Regresión Lineal</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../03_algoritmos_lineales/03-regresion-logistica/">Regresión Logística</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Regresión Logística</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#representacion-del-modelo">Representación del Modelo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#prediccion-de-probabilidades">Predicción de Probabilidades</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#entrenamiento-del-modelo">Entrenamiento del Modelo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#preparacion-de-los-datos">Preparación de los Datos</a>
+    </li>
+    </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../03_algoritmos_lineales/04-analisis-discriminante-lineal/">Análisis de Discriminante Lineal</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-analisis-discriminante-lineal/">Análisis de Discriminante Lineal</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">04 Algoritmos No Lineales</span></p>
@@ -137,8 +133,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">01 Introducción</li>
-      <li class="breadcrumb-item active">Plataformas y Herramientas</li>
+          <li class="breadcrumb-item">03 Algoritmos Lineales</li>
+      <li class="breadcrumb-item active">Regresión Logística</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -554,16 +550,22 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="plataformas-y-herramientas">Plataformas y Herramientas<a class="anchor-link" href="#plataformas-y-herramientas">¶</a></h1><h3 id="rapidminer"><a href="https://rapidminer.com">RapidMiner</a><a class="anchor-link" href="#rapidminer">¶</a></h3><p>RapidMiner es una herramienta que provee procedimientos de Data Mining y Machine Learning. Permite cargar datos, aplicar transformaciones a los mismos, pre procesamiento de datos, visualizacion, analisis predictivo y modelado estadistico, evaluacion, y despliegue de modelos.</p>
-<p>Es una herramienta no-code que permite realizar todas estas tareas sin necesidad de escribir codigo. Tanto desarrolladores como usuarios de negocio pueden utilizar RapidMiner para crear modelos de Machine Learning.</p>
-<h3 id="scikit-learn"><a href="https://scikit-learn.org/stable/">SciKit Learn</a><a class="anchor-link" href="#scikit-learn">¶</a></h3><p>SciKit Learn es una libreria de Machine Learning de codigo abierto. Soporta tanto Aprendizaje Supervisado como Aprendizaje No Supervisado. Tambien provee herramientas para pre procesamiento de datos, seleccion de modelos, evaluacion de modelos, entre otras utilidades. Esta libreria esta disponible para Python y fue diseñada para trabajar con otras librerias de Python como NumPy y SciPy.</p>
-<h3 id="tensorflow"><a href="https://www.tensorflow.org/">TensorFlow</a><a class="anchor-link" href="#tensorflow">¶</a></h3><p>TensorFlow es una plataforma de extremo a extremo para Machine Learning de codigo abierto. Tiene un ecosistema completo de herramientas, librerias y recursos de la comunidad que permite a los investigadores de Machine Learning crear y desplegar aplicaciones de Machine Learning.</p>
-<p>Originalmente desarrollado por investigadores e ingenieros que trabajan en el equipo de Google Brain para avanzar su investigacion en Machine Learning, y redes neurales, pero la herramienta es versatil y puede ser utilizada en una amplia variedad de otros dominios.</p>
-<h3 id="azure-machine-learning"><a href="https://azure.microsoft.com/en-us/services/machine-learning/">Azure Machine Learning</a><a class="anchor-link" href="#azure-machine-learning">¶</a></h3><p>Azure Machine Learning es un servicio de Machine Learning en la nube que permite a los desarrolladores y cientificos de datos crear, y desplegar modelos de Machine Learning. Permite crear modelos utilizando un entorno de desarrollo basado en notebooks.</p>
-<p>Es compatible con modelos de Machine Learning de codigo abierto como TensorFlow, PyTorch y scikit-learn.</p>
-<h3 id="weka"><a href="https://www.cs.waikato.ac.nz/ml/weka/">Weka</a><a class="anchor-link" href="#weka">¶</a></h3><p>Weka es una herramienta de Machine Learning de codigo abierto escrita en Java. Contiene herramientas para preparacion de datos, clasificacion, regresion, clustering, y visualizacion. Es facil de usar gracias a su interfaz grafica, y gracias a estar completamente implementada en Java, es portable y puede ser ejecutada en cualquier plataforma.</p>
-<h3 id="knime"><a href="https://www.knime.com/">KNIME</a><a class="anchor-link" href="#knime">¶</a></h3><p>KNIME ofrece una plataforma completa de extremo a extremo para Machine Learning y Data Science. Permite crear modelos analiticos, y desplegarlos en produccion, facilitando la integracion de modelos de Machine Learning en aplicaciones de negocio.</p>
-<p>Utiliza una interface intuitiva no-code/low-code que permite a los usuarios de negocio y a los desarrolladores crear modelos de Machine Learning sin necesidad de escribir codigo.</p>
+<h1 id="regresion-logistica">Regresión Logística<a class="anchor-link" href="#regresion-logistica">¶</a></h1><p>La regresión logística es un modelo de clasificación utilizado para problemas de clasificación de dos clases. En su centro tiene a la función logística, tambien conocida como funcion sigmoide, que es una función que toma valores reales y los comprime en un rango entre 0 y 1. La función logística se define como:</p>
+<p>$$y = \frac{1}{1 + e^{-x}}$$</p>
+<p>Donde $x$ es el valor de entrada y $y$ es el valor transformado.</p>
+<h2 id="representacion-del-modelo">Representación del Modelo<a class="anchor-link" href="#representacion-del-modelo">¶</a></h2><p>La función logística es utlizada por el algoitmo de regresión logística para predecir la probabilidad de que una instancia pertenezca a una clase en particular. Para esto se utiliza una combinación lineal de las variables de entrada, y se aplica la función logística a esta combinación lineal. El resultado es una función que sigue la siguiente ecuación:</p>
+<p>$$y = \frac{\beta_0 + \beta_1x_1 + \beta_2x_2 + ... + \beta_nx_n}{1 + e^{-(\beta_0 + \beta_1x_1 + \beta_2x_2 + ... + \beta_nx_n)}}$$</p>
+<p>La representación del modelo de regresión logística en si, es el conjunto de coeficientes $\beta_0, \beta_1, \beta_2, ..., \beta_n$ que fueron aprendidos durante el entrenamiento del modelo.</p>
+<h2 id="prediccion-de-probabilidades">Predicción de Probabilidades<a class="anchor-link" href="#prediccion-de-probabilidades">¶</a></h2><p>La salida de la función logística es un valor entre 0 y 1, que representa la probabilidad de que una instancia pertenezca a la clase positiva. Para convertir este valor en una predicción binaria, se utiliza un umbral, que por defecto es 0.5. Si el valor de la función logística es mayor a 0.5, la predicción es 1, y si es menor a 0.5, la predicción es 0.</p>
+<h2 id="entrenamiento-del-modelo">Entrenamiento del Modelo<a class="anchor-link" href="#entrenamiento-del-modelo">¶</a></h2><p>El entrenamiento del modelo de regresión logística consiste en estimar los valores de los coeficientes $\beta_0, \beta_1, \beta_2, ..., \beta_n$. Para esto se utiliza el algoritmo de maxima verosimilitud, un algoritmo comúnmente utilizado en aprendizaje automatizado, pero que realiza varias suposiciones sobre los datos. La idea es que los mejores coeficientes son aquellos que predicen valores cercanos a 1 para las instancias positivas, y valores cercanos a 0 para las instancias negativas. Aquí se busca reducir el error en el modelo para las probabilidades que predice. Esto se implementa comúnmente utilizando algoritmos de optimización como el método Cuasi-Newton.</p>
+<h2 id="preparacion-de-los-datos">Preparación de los Datos<a class="anchor-link" href="#preparacion-de-los-datos">¶</a></h2><p>El modelo de regresión logística realiza varias suposiciones acerca de los datos, incluyendo la distribución y las relaciones entre las variables. Como tal, es importante preparar los datos para que se ajusten a estas suposiciones. Esto incluye:</p>
+<ul>
+<li><strong>Variable de salida binaria</strong>: El modelo de regresión logística hace predicciones sobre la probabilidad de que una instancia pertenezca a la clase positiva.</li>
+<li><strong>Remover ruido</strong>: Se asume que no existen errores en la clasificacion de las instancias en el conjunto de entrenamiento. Se recomienda remover los ejemplos que estén mal clasificados utilizando operaciones de limpieza de datos.</li>
+<li><strong>Distribución Gaussiana</strong>: El modelo de regresión logística es un algoritmo lineal. Resultara en mejores resultados si las variables de entrada tienen una distribución Gaussiana.</li>
+<li><strong>Remover entradas correlacionadas</strong>: El modelo de regresión logística sufrirá de un sobreajuste si las variables de entrada estan altamente correlacionadas. Se recomienda remover las variables que esten altamente correlacionadas entre si.</li>
+<li><strong>Falla en converger</strong>: Es posible que el algoritmo de optimización no converja. Esto puede suceder si hay entradas altamente correlacionadas en los datos de entrenamiento.</li>
+</ul>
 </div>
 </div>
 </div>
@@ -579,8 +581,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../01-definiciones/" class="btn btn-neutral float-left" title="Que es "Machine Learining""><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../03-crisp-dm/" class="btn btn-neutral float-right" title="CRISP-DM">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../02-regresion-lineal/" class="btn btn-neutral float-left" title="Regresión Lineal"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../04-analisis-discriminante-lineal/" class="btn btn-neutral float-right" title="Análisis de Discriminante Lineal">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -603,10 +605,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../01-definiciones/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../02-regresion-lineal/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../03-crisp-dm/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../04-analisis-discriminante-lineal/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

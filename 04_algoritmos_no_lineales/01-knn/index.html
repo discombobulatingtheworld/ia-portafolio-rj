@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://discombobulatingtheworld.github.io/ia-portafolio-rj/01_introduccion/02-herramientas/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://discombobulatingtheworld.github.io/ia-portafolio-rj/04_algoritmos_no_lineales/01-knn/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Plataformas y Herramientas - Portafolio de Machine Learning</title>
+    <title>K Vecinos Más Cercanos (k-NN) - Portafolio de Machine Learning</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Plataformas y Herramientas";
-        var mkdocs_page_input_path = "01_introduccion\\02-herramientas.ipynb";
-        var mkdocs_page_url = "/ia-portafolio-rj/01_introduccion/02-herramientas/";
+        var mkdocs_page_name = "K Vecinos M\u00e1s Cercanos (k-NN)";
+        var mkdocs_page_input_path = "04_algoritmos_no_lineales\\01-knn.ipynb";
+        var mkdocs_page_url = "/ia-portafolio-rj/04_algoritmos_no_lineales/01-knn/";
       </script>
     
     <!--[if lt IE 9]>
@@ -40,32 +40,18 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">01 Introducción</span></p>
-              <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../01-definiciones/">Que es "Machine Learining"</a>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/01-definiciones/">Que es "Machine Learining"</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Plataformas y Herramientas</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#rapidminer">RapidMiner</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#scikit-learn">SciKit Learn</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#tensorflow">TensorFlow</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#azure-machine-learning">Azure Machine Learning</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#weka">Weka</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#knime">KNIME</a>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/02-herramientas/">Plataformas y Herramientas</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../03-crisp-dm/">CRISP-DM</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/03-crisp-dm/">CRISP-DM</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../04-comparacion-herramientas/">Comparacion de Algoritmos en Herramientas</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/04-comparacion-herramientas/">Comparacion de Algoritmos en Herramientas</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../05-dataset/">Vista de un Dataset</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/05-dataset/">Vista de un Dataset</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../06-dataset-estadistica/">Estadistica de un Dataset</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/06-dataset-estadistica/">Estadistica de un Dataset</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">02 Tratamiento de datos</span></p>
@@ -87,12 +73,36 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">04 Algoritmos No Lineales</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../04_algoritmos_no_lineales/00-introduccion/">Algoritmos no Lineales</a>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../00-introduccion/">Algoritmos no Lineales</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../04_algoritmos_no_lineales/01-knn/">K Vecinos Más Cercanos (k-NN)</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">K Vecinos Más Cercanos (k-NN)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#cercania">Cercanía</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#distancia-euclidiana">Distancia Euclidiana</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#similitud-por-correlacion">Similitud por Correlación</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coeficiente-de-coincidencia-simple">Coeficiente de Coincidencia Simple</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#similitud-de-jaccard">Similitud de Jaccard</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#similitud-por-coseno">Similitud por Coseno</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#representacion-del-modelo">Representación del Modelo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#entrenamiento-del-modelo">Entrenamiento del Modelo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#prediccion-del-modelo">Predicción del Modelo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#preparacion-de-los-datos">Preparación de los Datos</a>
+    </li>
+    </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../04_algoritmos_no_lineales/02-naive-bayes/">Bayesiano Ingenuo</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-naive-bayes/">Bayesiano Ingenuo</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">05 Validación</span></p>
@@ -137,8 +147,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">01 Introducción</li>
-      <li class="breadcrumb-item active">Plataformas y Herramientas</li>
+          <li class="breadcrumb-item">04 Algoritmos No Lineales</li>
+      <li class="breadcrumb-item active">K Vecinos Más Cercanos (k-NN)</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -554,16 +564,46 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="plataformas-y-herramientas">Plataformas y Herramientas<a class="anchor-link" href="#plataformas-y-herramientas">¶</a></h1><h3 id="rapidminer"><a href="https://rapidminer.com">RapidMiner</a><a class="anchor-link" href="#rapidminer">¶</a></h3><p>RapidMiner es una herramienta que provee procedimientos de Data Mining y Machine Learning. Permite cargar datos, aplicar transformaciones a los mismos, pre procesamiento de datos, visualizacion, analisis predictivo y modelado estadistico, evaluacion, y despliegue de modelos.</p>
-<p>Es una herramienta no-code que permite realizar todas estas tareas sin necesidad de escribir codigo. Tanto desarrolladores como usuarios de negocio pueden utilizar RapidMiner para crear modelos de Machine Learning.</p>
-<h3 id="scikit-learn"><a href="https://scikit-learn.org/stable/">SciKit Learn</a><a class="anchor-link" href="#scikit-learn">¶</a></h3><p>SciKit Learn es una libreria de Machine Learning de codigo abierto. Soporta tanto Aprendizaje Supervisado como Aprendizaje No Supervisado. Tambien provee herramientas para pre procesamiento de datos, seleccion de modelos, evaluacion de modelos, entre otras utilidades. Esta libreria esta disponible para Python y fue diseñada para trabajar con otras librerias de Python como NumPy y SciPy.</p>
-<h3 id="tensorflow"><a href="https://www.tensorflow.org/">TensorFlow</a><a class="anchor-link" href="#tensorflow">¶</a></h3><p>TensorFlow es una plataforma de extremo a extremo para Machine Learning de codigo abierto. Tiene un ecosistema completo de herramientas, librerias y recursos de la comunidad que permite a los investigadores de Machine Learning crear y desplegar aplicaciones de Machine Learning.</p>
-<p>Originalmente desarrollado por investigadores e ingenieros que trabajan en el equipo de Google Brain para avanzar su investigacion en Machine Learning, y redes neurales, pero la herramienta es versatil y puede ser utilizada en una amplia variedad de otros dominios.</p>
-<h3 id="azure-machine-learning"><a href="https://azure.microsoft.com/en-us/services/machine-learning/">Azure Machine Learning</a><a class="anchor-link" href="#azure-machine-learning">¶</a></h3><p>Azure Machine Learning es un servicio de Machine Learning en la nube que permite a los desarrolladores y cientificos de datos crear, y desplegar modelos de Machine Learning. Permite crear modelos utilizando un entorno de desarrollo basado en notebooks.</p>
-<p>Es compatible con modelos de Machine Learning de codigo abierto como TensorFlow, PyTorch y scikit-learn.</p>
-<h3 id="weka"><a href="https://www.cs.waikato.ac.nz/ml/weka/">Weka</a><a class="anchor-link" href="#weka">¶</a></h3><p>Weka es una herramienta de Machine Learning de codigo abierto escrita en Java. Contiene herramientas para preparacion de datos, clasificacion, regresion, clustering, y visualizacion. Es facil de usar gracias a su interfaz grafica, y gracias a estar completamente implementada en Java, es portable y puede ser ejecutada en cualquier plataforma.</p>
-<h3 id="knime"><a href="https://www.knime.com/">KNIME</a><a class="anchor-link" href="#knime">¶</a></h3><p>KNIME ofrece una plataforma completa de extremo a extremo para Machine Learning y Data Science. Permite crear modelos analiticos, y desplegarlos en produccion, facilitando la integracion de modelos de Machine Learning en aplicaciones de negocio.</p>
-<p>Utiliza una interface intuitiva no-code/low-code que permite a los usuarios de negocio y a los desarrolladores crear modelos de Machine Learning sin necesidad de escribir codigo.</p>
+<h1 id="k-vecinos-mas-cercanos-k-nn">K Vecinos Más Cercanos (k-NN)<a class="anchor-link" href="#k-vecinos-mas-cercanos-k-nn">¶</a></h1><p>El algoritmo de los k vecinos más cercanos (k-NN) es un algoritmo de aprendizaje supervisado que intenta predecir el valor de una variable objetivo a partir de su similitud con otros datos existentes en el conjunto de entrenamiento. El algoritmo k-NN asume que los datos similares existen en proximidad cercana. En otras palabras, objetos similares están cerca unos de otros.</p>
+<p>En comparación con otros algoritmos de aprendizaje supervisado que intentan hallar la mejor aproximacion de una funcion $y = f(x)$, el algoritmo k-NN no intenta construir un modelo interno, sino que simplemente almacena instancias de entrenamiento. La clasificación de una nueva instancia se realiza en base a la similitud con las instancias almacenadas.</p>
+<p>Es un método no paramétrico que no hace suposiciones sobre la distribución de los datos.</p>
+<h2 id="cercania">Cercanía<a class="anchor-link" href="#cercania">¶</a></h2><p>Existen varias formas de medida de cercanía. La idea utilizada por el algoritmo, es representar cada dato como un punto en un espacion $n$-dimensional, dada $n$ cantidad de atributos. Pero incluso utilizando esta idea surgen problemas como lo es la proximidad a varios puntos de distinta clasificación. Para esto se pone un limite a la cantidad de vecinos a considerar, y se clasifica en base a la clase mayoritaria de los $k$ vecinos más cercanos. Si este numero $k$ es par, se puede producir un empate, por lo que se suele elegir un numero impar.</p>
+<p>Para comparar la similitud entre dos puntos, pueden utilizar varios tipos de calculos de distancia. La más común es la distancia euclidiana, pero se pueden utilizar otros.</p>
+<h3 id="distancia-euclidiana">Distancia Euclidiana<a class="anchor-link" href="#distancia-euclidiana">¶</a></h3><p>Dada por la siguiente ecuación:</p>
+<p>$$d(x,y) = \sqrt{\sum_{i=1}^{n}(x_i - y_i)^2}$$</p>
+<p>Es la distancia más comúnmente utilizada, pero es sensible a la escala de los datos. Para evitar esto, se puede normalizar los datos, es decir, llevarlos a una escala común. Otras distancias que se pueden utilizar son:</p>
+<ul>
+<li><strong>Distancia Manhattan</strong>:
+$$d(x,y) = \sum_{i=1}^{n}|x_i - y_i|$$</li>
+<li><strong>Distancia Chebyshev</strong>:
+$$d(x,y) = \max_{i=1}^{n}|x_i - y_i|$$</li>
+<li><strong>Distancia Minkowski</strong>:
+$$\begin{align} &amp; d(x,y) = \left(\sum_{i=1}^{n}|x_i - y_i|^p\right)^{1/p} \\ &amp; p = 1 \rightarrow manhattan
+ \\ &amp; p = 2 \rightarrow euclidiana \\ &amp; p = \infty \rightarrow chebyshev\end{align}$$</li>
+</ul>
+<p>Una corrección que se puede hacer a la distancia euclidiana es la de considerar las instancias mas cercanas como las que tienen mayor influencia en la clasificación. Para esto se puede asignar pesos a la distancia de cada vecino, de forma que los vecinos más cercanos tengan mayor influencia en la clasificación. Una forma de hacer esto es la siguiente: consideramos que la suma de los pesos debe ser 1, y que el peso de un vecino es inversamente proporcional a su distancia. Usando caída exponencial, el peso de un vecino $i$ es:</p>
+<p>$$w_i = \frac{e^{-d(x,x_i)}}{\sum_{j=1}^{k}e^{-d(x,x_j)}}$$</p>
+<p>El calculo de clasificación resultante es:</p>
+<p>$$y = {max\ class} (w_1 \cdot y_1, \dots, w_k \cdot y_k)$$</p>
+<h3 id="similitud-por-correlacion">Similitud por Correlación<a class="anchor-link" href="#similitud-por-correlacion">¶</a></h3><p>Otra forma de medir la similitud entre dos puntos es la correlación. La correlación es una medida de la relación lineal entre dos puntos. La correlación de Pearson varía entre -1 y 1, donde 1 es una correlación positiva perfecta y -1 es una correlación negativa perfecta. Una correlación de 0 indica que no hay relación entre los puntos, o que existe una relación no lineal.</p>
+<p>La correlación se calcula entre puntos, no las variables en si. Se calcula como:</p>
+<p>$$corr(X,Y) = \frac{cov(X,Y)}{\sigma_X \cdot \sigma_Y}$$</p>
+<p>Donde $cov(X,Y)$ es la covarianza entre $X$ e $Y$, y $\sigma_X$ y $\sigma_Y$ son las desviaciones estandar de $X$ e $Y$ respectivamente. Estas son calculadas de la siguiente forma:</p>
+<p>$$\begin{align} &amp; cov(X,Y) = \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}{n-1} \\ &amp; \sigma_X = \sqrt{\frac{\sum_{i=1}^{n}(x_i - \bar{x})^2}{n-1}} \\ &amp; \sigma_Y = \sqrt{\frac{\sum_{i=1}^{n}(y_i - \bar{y})^2}{n-1}}\end{align}$$</p>
+<h3 id="coeficiente-de-coincidencia-simple">Coeficiente de Coincidencia Simple<a class="anchor-link" href="#coeficiente-de-coincidencia-simple">¶</a></h3><p>El coeficiente de coincidencia simple es una medida de similitud entre dos puntos cuando los atributos son binarios. Se calcula como la proporcion de aquellos atributos que coinciden entre los dos puntos.</p>
+<p>$$SMC = \frac{m_{11} + m_{00}}{m_{11} + m_{10} + m_{01} + m_{00}}$$</p>
+<p>Donde $m_{ij}$ es la cantidad de atributos cuyo valor en el punto $X$ es $i$ y en el punto $Y$ es $j$.</p>
+<h3 id="similitud-de-jaccard">Similitud de Jaccard<a class="anchor-link" href="#similitud-de-jaccard">¶</a></h3><p>La similitud de Jaccard es una medida de similitud entre dos puntos cuando los atributos son binarios. Se calcula de forma similar al coeficiente de coincidencia simple, pero se excluyen los atributos donde ambos puntos tienen valor 0.</p>
+<p>$$J(X,Y) = \frac{m_{11}}{m_{11} + m_{10} + m_{01}}$$</p>
+<p>Es utilizado, por ejemplo, para medir la similitud entre documentos, donde cada atributo es una palabra, y el valor es 1 si la palabra aparece en el documento, y 0 si no, con la consideración de que dos documentos son similares si comparten palabras.</p>
+<h3 id="similitud-por-coseno">Similitud por Coseno<a class="anchor-link" href="#similitud-por-coseno">¶</a></h3><p>La similitud por coseno es una medida de similitud entre dos puntos cuando los atributos son valores reales. Considera los puntos como vectores, y calcula el coseno del angulo entre ellos. Se calcula como:</p>
+<p>$$cos(X,Y) = \frac{X \cdot Y}{||X|| \cdot ||Y||}$$</p>
+<p>Donde $X \cdot Y$ es el producto punto entre los vectores $X$ e $Y$, y $||X||$ e $||Y||$ son las normas de los vectores $X$ e $Y$ respectivamente. Estas se calculan como:</p>
+<p>$$\begin{align} &amp; ||X|| = \sqrt{\sum_{i=1}^{n}x_i^2} \\ &amp; ||Y|| = \sqrt{\sum_{i=1}^{n}y_i^2}\end{align}$$</p>
+<h2 id="representacion-del-modelo">Representación del Modelo<a class="anchor-link" href="#representacion-del-modelo">¶</a></h2><p>El algoritmo k-NN es simple de implementar, pues su representación interna es simplemente el conjunto de entrenamiento.</p>
+<h2 id="entrenamiento-del-modelo">Entrenamiento del Modelo<a class="anchor-link" href="#entrenamiento-del-modelo">¶</a></h2><p>El algoritmo k-NN no tiene un entrenamiento propiamente dicho, pues su representación interna es simplemente el conjunto de entrenamiento.</p>
+<h2 id="prediccion-del-modelo">Predicción del Modelo<a class="anchor-link" href="#prediccion-del-modelo">¶</a></h2><p>Para predecir la clase de un nuevo punto, se calcula la distancia entre este y todos los puntos del conjunto de entrenamiento. Luego se seleccionan los $k$ puntos más cercanos, y se clasifica el nuevo punto en base a la clase mayoritaria de estos $k$ puntos. Esto requiere primero seleccionar una medida de distancia, y luego un valor para $k$.</p>
+<h2 id="preparacion-de-los-datos">Preparación de los Datos<a class="anchor-link" href="#preparacion-de-los-datos">¶</a></h2><p>Para la utilización del algoritmo k-NN, es necesario que los datos esten en una escala común, pues algunas medidas de distancia son sensibles a la escala de los datos. Para esto se recomienda normalizar los datos.</p>
 </div>
 </div>
 </div>
@@ -579,8 +619,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../01-definiciones/" class="btn btn-neutral float-left" title="Que es "Machine Learining""><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../03-crisp-dm/" class="btn btn-neutral float-right" title="CRISP-DM">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../00-introduccion/" class="btn btn-neutral float-left" title="Algoritmos no Lineales"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../02-naive-bayes/" class="btn btn-neutral float-right" title="Bayesiano Ingenuo">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -603,10 +643,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../01-definiciones/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../00-introduccion/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../03-crisp-dm/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../02-naive-bayes/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

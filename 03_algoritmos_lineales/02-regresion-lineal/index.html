@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://discombobulatingtheworld.github.io/ia-portafolio-rj/01_introduccion/02-herramientas/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://discombobulatingtheworld.github.io/ia-portafolio-rj/03_algoritmos_lineales/02-regresion-lineal/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Plataformas y Herramientas - Portafolio de Machine Learning</title>
+    <title>Regresión Lineal - Portafolio de Machine Learning</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Plataformas y Herramientas";
-        var mkdocs_page_input_path = "01_introduccion\\02-herramientas.ipynb";
-        var mkdocs_page_url = "/ia-portafolio-rj/01_introduccion/02-herramientas/";
+        var mkdocs_page_name = "Regresi\u00f3n Lineal";
+        var mkdocs_page_input_path = "03_algoritmos_lineales\\02-regresion-lineal.ipynb";
+        var mkdocs_page_url = "/ia-portafolio-rj/03_algoritmos_lineales/02-regresion-lineal/";
       </script>
     
     <!--[if lt IE 9]>
@@ -40,32 +40,18 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">01 Introducción</span></p>
-              <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../01-definiciones/">Que es "Machine Learining"</a>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/01-definiciones/">Que es "Machine Learining"</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Plataformas y Herramientas</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#rapidminer">RapidMiner</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#scikit-learn">SciKit Learn</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#tensorflow">TensorFlow</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#azure-machine-learning">Azure Machine Learning</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#weka">Weka</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#knime">KNIME</a>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/02-herramientas/">Plataformas y Herramientas</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../03-crisp-dm/">CRISP-DM</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/03-crisp-dm/">CRISP-DM</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../04-comparacion-herramientas/">Comparacion de Algoritmos en Herramientas</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/04-comparacion-herramientas/">Comparacion de Algoritmos en Herramientas</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../05-dataset/">Vista de un Dataset</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/05-dataset/">Vista de un Dataset</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../06-dataset-estadistica/">Estadistica de un Dataset</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_introduccion/06-dataset-estadistica/">Estadistica de un Dataset</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">02 Tratamiento de datos</span></p>
@@ -74,16 +60,38 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">03 Algoritmos Lineales</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../03_algoritmos_lineales/00-introduccion/">Algoritmos Lineales</a>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../00-introduccion/">Algoritmos Lineales</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../03_algoritmos_lineales/01-descenso-gradiente/">Descenso de Gradiente</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-descenso-gradiente/">Descenso de Gradiente</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../03_algoritmos_lineales/02-regresion-lineal/">Regresión Lineal</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Regresión Lineal</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#representacion-del-modelo">Representación del Modelo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#entrenamiento-del-modelo">Entrenamiento del Modelo</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#regresion-lineal-simple">Regresión Lineal Simple</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#minimos-cuadrados-ordinarios">Minimos Cuadrados Ordinarios</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#descenso-de-gradiente">Descenso de Gradiente</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#regresion-lineal-regularizada">Regresión Lineal Regularizada</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#prediccion-del-modelo">Predicción del Modelo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#preparacion-de-los-datos">Preparación de los Datos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#guia-de-regresion-lineal-simple">Guía de Regresión Lineal Simple</a>
+    </li>
+    </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../03_algoritmos_lineales/03-regresion-logistica/">Regresión Logística</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-regresion-logistica/">Regresión Logística</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../03_algoritmos_lineales/04-analisis-discriminante-lineal/">Análisis de Discriminante Lineal</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-analisis-discriminante-lineal/">Análisis de Discriminante Lineal</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">04 Algoritmos No Lineales</span></p>
@@ -137,8 +145,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">01 Introducción</li>
-      <li class="breadcrumb-item active">Plataformas y Herramientas</li>
+          <li class="breadcrumb-item">03 Algoritmos Lineales</li>
+      <li class="breadcrumb-item active">Regresión Lineal</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -554,16 +562,47 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="plataformas-y-herramientas">Plataformas y Herramientas<a class="anchor-link" href="#plataformas-y-herramientas">¶</a></h1><h3 id="rapidminer"><a href="https://rapidminer.com">RapidMiner</a><a class="anchor-link" href="#rapidminer">¶</a></h3><p>RapidMiner es una herramienta que provee procedimientos de Data Mining y Machine Learning. Permite cargar datos, aplicar transformaciones a los mismos, pre procesamiento de datos, visualizacion, analisis predictivo y modelado estadistico, evaluacion, y despliegue de modelos.</p>
-<p>Es una herramienta no-code que permite realizar todas estas tareas sin necesidad de escribir codigo. Tanto desarrolladores como usuarios de negocio pueden utilizar RapidMiner para crear modelos de Machine Learning.</p>
-<h3 id="scikit-learn"><a href="https://scikit-learn.org/stable/">SciKit Learn</a><a class="anchor-link" href="#scikit-learn">¶</a></h3><p>SciKit Learn es una libreria de Machine Learning de codigo abierto. Soporta tanto Aprendizaje Supervisado como Aprendizaje No Supervisado. Tambien provee herramientas para pre procesamiento de datos, seleccion de modelos, evaluacion de modelos, entre otras utilidades. Esta libreria esta disponible para Python y fue diseñada para trabajar con otras librerias de Python como NumPy y SciPy.</p>
-<h3 id="tensorflow"><a href="https://www.tensorflow.org/">TensorFlow</a><a class="anchor-link" href="#tensorflow">¶</a></h3><p>TensorFlow es una plataforma de extremo a extremo para Machine Learning de codigo abierto. Tiene un ecosistema completo de herramientas, librerias y recursos de la comunidad que permite a los investigadores de Machine Learning crear y desplegar aplicaciones de Machine Learning.</p>
-<p>Originalmente desarrollado por investigadores e ingenieros que trabajan en el equipo de Google Brain para avanzar su investigacion en Machine Learning, y redes neurales, pero la herramienta es versatil y puede ser utilizada en una amplia variedad de otros dominios.</p>
-<h3 id="azure-machine-learning"><a href="https://azure.microsoft.com/en-us/services/machine-learning/">Azure Machine Learning</a><a class="anchor-link" href="#azure-machine-learning">¶</a></h3><p>Azure Machine Learning es un servicio de Machine Learning en la nube que permite a los desarrolladores y cientificos de datos crear, y desplegar modelos de Machine Learning. Permite crear modelos utilizando un entorno de desarrollo basado en notebooks.</p>
-<p>Es compatible con modelos de Machine Learning de codigo abierto como TensorFlow, PyTorch y scikit-learn.</p>
-<h3 id="weka"><a href="https://www.cs.waikato.ac.nz/ml/weka/">Weka</a><a class="anchor-link" href="#weka">¶</a></h3><p>Weka es una herramienta de Machine Learning de codigo abierto escrita en Java. Contiene herramientas para preparacion de datos, clasificacion, regresion, clustering, y visualizacion. Es facil de usar gracias a su interfaz grafica, y gracias a estar completamente implementada en Java, es portable y puede ser ejecutada en cualquier plataforma.</p>
-<h3 id="knime"><a href="https://www.knime.com/">KNIME</a><a class="anchor-link" href="#knime">¶</a></h3><p>KNIME ofrece una plataforma completa de extremo a extremo para Machine Learning y Data Science. Permite crear modelos analiticos, y desplegarlos en produccion, facilitando la integracion de modelos de Machine Learning en aplicaciones de negocio.</p>
-<p>Utiliza una interface intuitiva no-code/low-code que permite a los usuarios de negocio y a los desarrolladores crear modelos de Machine Learning sin necesidad de escribir codigo.</p>
+<h1 id="regresion-lineal">Regresión Lineal<a class="anchor-link" href="#regresion-lineal">¶</a></h1><p>La regresión lineal es una técnica estadística que nos permite modelar la relación entre una variable dependiente $y$ y una o más variables independientes $x$. Es un modelo lineal, asume una relación lineal entre las variables de entrada y una única variable de salida. Esto significa que la variable de salida se puede calcular como una combinación lineal de las variables de entrada.</p>
+<p>Dependiendo de si las variables de entrada son una o más, hablamos de regresión lineal simple o regresión lineal múltiple. Y si el entrenamiento se realiza mediante minimos cuadrados ordinarios, hablamos de regresión lineal por minimos cuadrados ordinarios, o regresion por minimos cuadrados.</p>
+<h2 id="representacion-del-modelo">Representación del Modelo<a class="anchor-link" href="#representacion-del-modelo">¶</a></h2><p>La regresión lineal es un modelo lineal, es decir, un modelo que asume una relación lineal entre las variables de entrada y la variable de salida. En el caso de la regresión lineal simple, el modelo lineal se puede representar como:</p>
+<p>$$y = b_0 + b_1 \cdot x_1 + b_2 \cdot x_2 + \dots + b_n \cdot x_n$$</p>
+<p>Aquí, $y$ es la variable de salida, $x_1, x_2, \dots, x_n$ son las variables de entrada, y $b_0, b_1, b_2, \dots, b_n$ son los coeficientes del modelo lineal. Las entradas y salidas son numéricas, y cada entrada tiene un coeficiente que es aprendido por el modelo durante la etapa de aprendizaje. Si tenemos una entrada, la representacion es una linea, si tenemos dos entradas, la representacion es un plano, y si tenemos tres o más entradas, la representacion es un hiperplano. Cuando el coeficiente de una entrada es cero, la entrada no afecta a la salida, y no es utilizada por el modelo.</p>
+<p>La representación del modelo en si, es el conjunto de coeficientes del modelo lineal.</p>
+<h2 id="entrenamiento-del-modelo">Entrenamiento del Modelo<a class="anchor-link" href="#entrenamiento-del-modelo">¶</a></h2><p>El aprendizaje de la regresión lineal consiste en encontrar los coeficientes del modelo lineal que mejor se ajustan a los datos de entrenamiento. Para ello, es necesario estimar los coeficientes mediante los datos disponibles. En este documento veremos 4 metodos:</p>
+<ul>
+<li>Regresión lineal simple</li>
+<li>Minimos cuadrados ordinarios</li>
+<li>Descenso de gradiente</li>
+<li>Regresión lineal regularizada</li>
+</ul>
+<h3 id="regresion-lineal-simple">Regresión Lineal Simple<a class="anchor-link" href="#regresion-lineal-simple">¶</a></h3><p>La regresión lineal simple es un caso especial de la regresión lineal donde solo tenemos una variable de entrada. El proceso de aprendizaje consiste en utilizar estadísticas de los datos de entrenamiento para estimar los coeficientes del modelo lineal. Para esto se utilizan el promedio, la varianza, la covarianza, la correlación y la desviación estándar, en conjunto con acceso a todos los datos de entrenamiento.</p>
+<h3 id="minimos-cuadrados-ordinarios">Minimos Cuadrados Ordinarios<a class="anchor-link" href="#minimos-cuadrados-ordinarios">¶</a></h3><p>Los mínimos cuadrados ordinarios (OLS) es un método de optimización que encuentra los coeficientes del modelo lineal que minimizan la suma de los cuadrados de los residuos entre las predicciones y los valores reales. Calculamos las distancias entre cada punto y la linea, y sumamos los cuadrados de esas distancias. El objetivo es encontrar la linea que minimice esa suma. Para ello, se requiere acceso a todos los datos de entrenamiento, y la utilizacion de operaciones matriciales.</p>
+<h3 id="descenso-de-gradiente">Descenso de Gradiente<a class="anchor-link" href="#descenso-de-gradiente">¶</a></h3><p>El descenso de gradiente es un método de optimización que encuentra los coeficientes del modelo lineal que minimizan una función de costo. En cada iteración, se calcula el gradiente de la función de costo, y se actualizan los coeficientes en la dirección opuesta al gradiente. El proceso se repite hasta que se alcanza un número máximo de iteraciones, o hasta que el gradiente es suficientemente pequeño.</p>
+<p><a href="01-descenso-gradiente.ipynb">Articulo sobre descenso de gradiente</a></p>
+<h3 id="regresion-lineal-regularizada">Regresión Lineal Regularizada<a class="anchor-link" href="#regresion-lineal-regularizada">¶</a></h3><p>La regresión lineal regularizada utiliza el mismo proceso de aprendizaje que la regresión lineal por minimos cuadrados ordinarios, pero también intenta reducir la complejidad del modelo. Para ello, se utilizan dos metodos distintos:</p>
+<ul>
+<li><strong>Regresión lineal con regularización L1</strong>: Se minimiza también la suma absoluta de los coeficientes. Este método se conoce como regularización L1, o regularización Lasso.</li>
+<li><strong>Regresión lineal con regularización L2</strong>: Se minimiza también la suma de los cuadrados de los coeficientes. Este método se conoce como regularización L2, o regularización Ridge.</li>
+</ul>
+<h2 id="prediccion-del-modelo">Predicción del Modelo<a class="anchor-link" href="#prediccion-del-modelo">¶</a></h2><p>Una vez que el modelo ha sido entrenado, el proceso de realizar predicciones es tan sencillo como introducir los valores de las variables de entrada en el modelo lineal, y calcular el valor de la variable de salida.</p>
+<h2 id="preparacion-de-los-datos">Preparación de los Datos<a class="anchor-link" href="#preparacion-de-los-datos">¶</a></h2><p>Veremos algunas guías para preparar los datos para la regresión lineal. En general, uno deberia probar cada una de estas técnicas, y ver cual funciona mejor para el problema en cuestión.</p>
+<ul>
+<li><strong>Suposicion de linealidad</strong>: La regresión lineal asume una relación lineal entre las variables de entrada y la variable de salida. Si esto no se cumple, el algoritmo no es aplicable. Puede llegar a ser necesario transformar los datos para que cumplan esta suposición.</li>
+<li><strong>Remover ruido</strong>: La regresión lineal es sensible al ruido en los datos. Puede llegar a ser necesario remover los outliers, o los datos que no siguen la tendencia general de los datos. Se recomienda limpiar los datos antes de aplicar la regresión lineal.</li>
+<li><strong>Remover colinearidad</strong>: La regresión lineal resultara en un modelo sobreajustado si hay variables de entrada que están altamente correlacionadas. Se recomienda remover estas variables utilizando una matriz de correlación.</li>
+<li><strong>Distribución Gaussiana</strong>: La regresión lineal resultara en predicciones mas confiables si las variables de entrada y la variable de salida tienen una distribución Gaussiana. Se recomienda visualizar los datos utilizando histogramas, y transformar los datos si no tienen esta distribución.</li>
+<li><strong>Escalado de datos</strong>: La regresión lineal puede verse afectada por la escala de los datos. Se recomienda escalar los datos utilizando una normalización o una estandarización.</li>
+</ul>
+<h2 id="guia-de-regresion-lineal-simple">Guía de Regresión Lineal Simple<a class="anchor-link" href="#guia-de-regresion-lineal-simple">¶</a></h2><p>Veremos una guía paso a paso para aplicar la regresión lineal simple a un problema de regresión.</p>
+<ol>
+<li><strong>Gráfico de dispersión</strong>: Utilizar un gráfico de dispersión para visualizar la relación entre las variables de entrada y la variable de salida. Esto nos permite ver si la relación es lineal, y si hay outliers. En caso de encontrar una relación lineal, verificamos que podemos utilizar la regresión lineal simple.</li>
+<li><strong>Inicializar función de estimación</strong>: Inicializar la función de estimación siguiendo las siguientes ecuaciones:</li>
+</ol>
+<p>$$\begin{align} &amp; b_1 = \frac{\sum_{i=1}^{n} (x_i - \bar{x}) \cdot (y_i - \bar{y})}{\sum_{i=1}^{n} (x_i - \bar{x})^2} \\ &amp; b_0 = \bar{y} - b_1 \cdot \bar{x} \end{align}$$</p>
+<ol start="3">
+<li><strong>Estimación de error</strong>: Estimar el error del modelo utilizando la raíz cuadrada del error cuadrático medio (RMSE). Esto nos permite comparar el error del modelo con otros modelos de regresión lineal. Esto lo calculamos utilizando la siguiente ecuación:</li>
+</ol>
+<p>$$\begin{align} &amp; RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (p_i - y_i)^2} \\ &amp; p_i = (predicción\ de\ y\ para\ x_i) \\ &amp; y_i = (valor\ real\ de\ y\ para\ x_i) \end{align}$$</p>
 </div>
 </div>
 </div>
@@ -579,8 +618,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../01-definiciones/" class="btn btn-neutral float-left" title="Que es "Machine Learining""><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../03-crisp-dm/" class="btn btn-neutral float-right" title="CRISP-DM">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../01-descenso-gradiente/" class="btn btn-neutral float-left" title="Descenso de Gradiente"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../03-regresion-logistica/" class="btn btn-neutral float-right" title="Regresión Logística">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -603,10 +642,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../01-definiciones/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../01-descenso-gradiente/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../03-crisp-dm/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../03-regresion-logistica/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
