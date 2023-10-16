@@ -35,4 +35,4 @@ nav:
       - 06_casos_de_estudio\01-enfermedad-coronaria\04-regresion-logistica-python.ipynb
 plugins:
     - mkdocs-jupyter
-theme: readthedocs
+theme: material
