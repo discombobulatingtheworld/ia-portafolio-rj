@@ -30,9 +30,9 @@ nav:
   - 06 Casos de Estudio:
     - 01 Enfermedad Cardíaca:
       - 06_casos_de_estudio\01-enfermedad-coronaria\01-introduccion.ipynb
-      - 06_casos_de_estudio\01_enfermedad-coronaria\02-datos.ipynb
-      - 06_casos_de_estudio\01_enfermedad-coronaria\03-regresion-logistica-rapidminer.ipynb
-      - 06_casos_de_estudio\01_enfermedad-coronaria\04-regresion-logistica-python.ipynb
+      - 06_casos_de_estudio\01-enfermedad-coronaria\02-datos.ipynb
+      - 06_casos_de_estudio\01-enfermedad-coronaria\03-regresion-logistica-rapidminer.ipynb
+      - 06_casos_de_estudio\01-enfermedad-coronaria\04-regresion-logistica-python.ipynb
 plugins:
     - mkdocs-jupyter
 theme: readthedocs
