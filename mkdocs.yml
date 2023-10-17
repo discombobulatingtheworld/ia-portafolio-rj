@@ -10,7 +10,11 @@ nav:
     - introduccion\05-dataset.ipynb
     - introduccion\06-dataset-estadistica.ipynb
   - Tratamiento de datos:
-    - 02_tratamiento_de_datos\01-rapidminer-tutoriales.ipynb
+    - tratamiento-de-datos\00-introduccion.ipynb
+    - tratamiento-de-datos\01-estadistica.ipynb
+    - tratamiento-de-datos\02-valores-faltantes.ipynb
+    - tratamiento-de-datos\03-seleccion-atributos.ipynb
+    - tratamiento-de-datos\04-datos-anomalos.ipynb
   - Algoritmos Lineales: 
     - algoritmos-lineales\00-introduccion.ipynb
     - algoritmos-lineales\01-descenso-gradiente.ipynb
