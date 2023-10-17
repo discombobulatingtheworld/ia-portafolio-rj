@@ -3,43 +3,50 @@ site_url: https://discombobulatingtheworld.github.io/ia-portafolio-rj/
 nav:
   - Home: index.md
   - Introducción:
-    - 01_introduccion\01-definiciones.ipynb
-    - 01_introduccion\02-herramientas.ipynb
-    - 01_introduccion\03-crisp-dm.ipynb
-    - 01_introduccion\04-comparacion-herramientas.ipynb
-    - 01_introduccion\05-dataset.ipynb
-    - 01_introduccion\06-dataset-estadistica.ipynb
+    - introduccion\01-definiciones.ipynb
+    - introduccion\02-herramientas.ipynb
+    - introduccion\03-crisp-dm.ipynb
+    - introduccion\04-comparacion-herramientas.ipynb
+    - introduccion\05-dataset.ipynb
+    - introduccion\06-dataset-estadistica.ipynb
   - Tratamiento de datos:
     - 02_tratamiento_de_datos\01-rapidminer-tutoriales.ipynb
   - Algoritmos Lineales: 
-    - 03_algoritmos_lineales\00-introduccion.ipynb
-    - 03_algoritmos_lineales\01-descenso-gradiente.ipynb
-    - 03_algoritmos_lineales\02-regresion-lineal.ipynb
-    - 03_algoritmos_lineales\03-regresion-logistica.ipynb
-    - 03_algoritmos_lineales\04-analisis-discriminante-lineal.ipynb
+    - algoritmos-lineales\00-introduccion.ipynb
+    - algoritmos-lineales\01-descenso-gradiente.ipynb
+    - algoritmos-lineales\02-regresion-lineal.ipynb
+    - algoritmos-lineales\03-regresion-logistica.ipynb
+    - algoritmos-lineales\04-analisis-discriminante-lineal.ipynb
   - Algoritmos No Lineales:
-    - 04_algoritmos_no_lineales\00-introduccion.ipynb
-    - 04_algoritmos_no_lineales\01-knn.ipynb
-    - 04_algoritmos_no_lineales\02-naive-bayes.ipynb
+    - algoritmos-no-lineales\00-introduccion.ipynb
+    - algoritmos-no-lineales\01-knn.ipynb
+    - algoritmos-no-lineales\02-naive-bayes.ipynb
   - Validación:
-    - 05_validacion\00-introduccion.ipynb
-    - 05_validacion\01-error-prueba-vs-entrenamiento.ipynb
-    - 05_validacion\02-validacion-dividida.ipynb
-    - 05_validacion\03-validacion-cruzada.ipynb
-    - 05_validacion\04-contaminacion-accidental.ipynb
+    - validacion\00-introduccion.ipynb
+    - validacion\01-error-prueba-vs-entrenamiento.ipynb
+    - validacion\02-validacion-dividida.ipynb
+    - validacion\03-validacion-cruzada.ipynb
+    - validacion\04-contaminacion-accidental.ipynb
   - Casos de Estudio:
     - Enfermedad Cardíaca:
-      - 06_casos_de_estudio\01-enfermedad-coronaria\01-introduccion.ipynb
-      - 06_casos_de_estudio\01-enfermedad-coronaria\02-datos.ipynb
-      - 06_casos_de_estudio\01-enfermedad-coronaria\03-regresion-logistica-rapidminer.ipynb
-      - 06_casos_de_estudio\01-enfermedad-coronaria\04-regresion-logistica-python.ipynb
+      - casos-de-estudio\enfermedad-coronaria\01-introduccion.ipynb
+      - casos-de-estudio\enfermedad-coronaria\02-datos.ipynb
+      - casos-de-estudio\enfermedad-coronaria\03-regresion-logistica-rapidminer.ipynb
+      - casos-de-estudio\enfermedad-coronaria\04-regresion-logistica-python.ipynb
+    - Altura de Restos Oseos:
+      - casos-de-estudio\altura-osea\01-introduccion.ipynb
+      - casos-de-estudio\altura-osea\02-datos.ipynb
+      - casos-de-estudio\altura-osea\03-regresion-lineal-rapidminer.ipynb
+      - casos-de-estudio\altura-osea\04-regresion-lineal-python.ipynb
 plugins:
     - mkdocs-jupyter
     - search
     - tags
 theme: 
   name: material
+  language: es
   palette:
     scheme: slate
     primary: deep purple
     accent: deep purple
+use_directory_urls: true
