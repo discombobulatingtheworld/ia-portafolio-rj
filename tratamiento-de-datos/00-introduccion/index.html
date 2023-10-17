@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://discombobulatingtheworld.github.io/ia-portafolio-rj/tratamiento-de-datos/00-introduccion/">
       
       
+        <link rel="prev" href="../../introduccion/06-dataset-estadistica/">
+      
+      
+        <link rel="next" href="../01-estadistica/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Tratamiento de Datos - Portafolio de Machine Learning</title>
+        <title>Introducción - Portafolio de Machine Learning</title>
       
     
     
@@ -69,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tratamiento-de-datos" class="md-skip">
+        <a href="#introduccion" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -105,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tratamiento de Datos
+              Introducción
             
           </span>
         </div>
@@ -376,18 +380,20 @@
       
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -401,7 +407,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Tratamiento de datos
@@ -412,13 +418,103 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../02_tratamiento_de_datos/01-rapidminer-tutoriales.ipynb" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    None
+    Introducción
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-estadistica/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Estadística
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-valores-faltantes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Valores Faltantes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-seleccion-atributos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Selección de Atributos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-datos-anomalos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Datos Anómalos
   </span>
   
 
@@ -481,7 +577,7 @@
         
   
   <span class="md-ellipsis">
-    Algoritmos Lineales
+    Introducción
   </span>
   
 
@@ -624,7 +720,7 @@
         
   
   <span class="md-ellipsis">
-    Algoritmos no Lineales
+    Introducción
   </span>
   
 
@@ -727,7 +823,7 @@
         
   
   <span class="md-ellipsis">
-    Validación de Modelos
+    Introducción
   </span>
   
 
@@ -1555,7 +1651,11 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="tratamiento-de-datos">Tratamiento de Datos<a class="anchor-link" href="#tratamiento-de-datos">¶</a></h1>
+<h1 id="introduccion">Introducción<a class="anchor-link" href="#introduccion">¶</a></h1><p>Un algoritmo de aprendizaje automatizado no es una bala de plata capaz de recibir cualquier conjunto de datos y producir un modelo útil. Si la calidad de los datos utilizados para su entrenamiento es subpar, el modelo resultante también lo será. Por lo tanto, es importante que, al comenzar un proyecto de aprendizaje automatizado, se dedique tiempo a comprender los datos con los que se está trabajando.</p>
+<p>El proceso requiere conocimiento del área de aplicación para interpretar los datos correctamente. Esto significa conocer cuales son los datos disponibles, como se recopilaron y qué significan, y si estos son representativos de la población de interés.</p>
+<p>Es de importancia también conocer los tipos de datos con los que se trabaja. Ciertos algoritmos de aprendizaje automatizado funcionan mejor con ciertos tipos de datos. Y otros simplemente no se pueden aplicar a ciertos tipos de datos. Por ejemplo, los algoritmos de aprendizaje automatizado que utilizan distancias euclidianas, como la regresión lineal, no funcionan bien con datos categóricos. En estos casos puede ser requerida una transformación de los datos.</p>
+<p>Otro aspecto a tener en cuenta es el análisis estadístico de los datos. Características estadísticas como lo son la media, la moda, el desvío, los minimos, y los maximos, pueden ayudar a comprender los datos. También vuelve a ser importante para la selección de algoritmos a utilizar, dado que algunos realizan suposiciones sobre la distribución de los datos. Ejemplos con valores faltantes o valores atípicos pueden también afectar el rendimiento de los algoritmos de aprendizaje automatizado.</p>
+<p>Por estas razones, es importante realizar un análisis exploratorio de los datos antes de comenzar a trabajar con ellos. Este análisis exploratorio de datos nos permitirá realizar decisiones informadas sobre los algoritmos a utilizar, y sobre las transformaciones que se deben aplicar a los datos.</p>
 </div>
 </div>
 </div>

@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://discombobulatingtheworld.github.io/ia-portafolio-rj/casos-de-estudio/altura-osea/03-regresion-lineal-rapidminer/">
+        <link rel="canonical" href="https://discombobulatingtheworld.github.io/ia-portafolio-rj/tratamiento-de-datos/02-valores-faltantes/">
       
       
-        <link rel="prev" href="../02-datos/">
+        <link rel="prev" href="../01-estadistica/">
       
       
-        <link rel="next" href="../04-regresion-lineal-python/">
+        <link rel="next" href="../03-seleccion-atributos/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.3">
     
     
       
-        <title>Modelo de Regresión Lineal en RapidMiner - Portafolio de Machine Learning</title>
+        <title>Valores Faltantes - Portafolio de Machine Learning</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.79e020e9.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.79e020e9.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a5377069.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a5377069.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modelo-de-regresion-lineal-en-rapidminer" class="md-skip">
+        <a href="#valores-faltantes" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -89,7 +89,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="../../.." title="Portafolio de Machine Learning" class="md-header__button md-logo" aria-label="Portafolio de Machine Learning" data-md-component="logo">
+    <a href="../.." title="Portafolio de Machine Learning" class="md-header__button md-logo" aria-label="Portafolio de Machine Learning" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modelo de Regresión Lineal en RapidMiner
+              Valores Faltantes
             
           </span>
         </div>
@@ -183,7 +183,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Portafolio de Machine Learning" class="md-nav__button md-logo" aria-label="Portafolio de Machine Learning" data-md-component="logo">
+    <a href="../.." title="Portafolio de Machine Learning" class="md-nav__button md-logo" aria-label="Portafolio de Machine Learning" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -200,7 +200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -255,7 +255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../introduccion/01-definiciones/" class="md-nav__link">
+      <a href="../../introduccion/01-definiciones/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -275,7 +275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../introduccion/02-herramientas/" class="md-nav__link">
+      <a href="../../introduccion/02-herramientas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -295,7 +295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../introduccion/03-crisp-dm/" class="md-nav__link">
+      <a href="../../introduccion/03-crisp-dm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -315,7 +315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../introduccion/04-comparacion-herramientas/" class="md-nav__link">
+      <a href="../../introduccion/04-comparacion-herramientas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -335,7 +335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../introduccion/05-dataset/" class="md-nav__link">
+      <a href="../../introduccion/05-dataset/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -355,7 +355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../introduccion/06-dataset-estadistica/" class="md-nav__link">
+      <a href="../../introduccion/06-dataset-estadistica/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -380,18 +380,20 @@
       
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -405,7 +407,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Tratamiento de datos
@@ -418,7 +420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tratamiento-de-datos/00-introduccion/" class="md-nav__link">
+      <a href="../00-introduccion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -438,7 +440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tratamiento-de-datos/01-estadistica/" class="md-nav__link">
+      <a href="../01-estadistica/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -456,9 +458,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../tratamiento-de-datos/02-valores-faltantes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Valores Faltantes
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -467,6 +489,40 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rapidminer" class="md-nav__link">
+    RapidMiner
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -478,7 +534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tratamiento-de-datos/03-seleccion-atributos/" class="md-nav__link">
+      <a href="../03-seleccion-atributos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -498,7 +554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tratamiento-de-datos/04-datos-anomalos/" class="md-nav__link">
+      <a href="../04-datos-anomalos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -561,7 +617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../algoritmos-lineales/00-introduccion/" class="md-nav__link">
+      <a href="../../algoritmos-lineales/00-introduccion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -581,7 +637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../algoritmos-lineales/01-descenso-gradiente/" class="md-nav__link">
+      <a href="../../algoritmos-lineales/01-descenso-gradiente/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -601,7 +657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../algoritmos-lineales/02-regresion-lineal/" class="md-nav__link">
+      <a href="../../algoritmos-lineales/02-regresion-lineal/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -621,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../algoritmos-lineales/03-regresion-logistica/" class="md-nav__link">
+      <a href="../../algoritmos-lineales/03-regresion-logistica/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -641,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../algoritmos-lineales/04-analisis-discriminante-lineal/" class="md-nav__link">
+      <a href="../../algoritmos-lineales/04-analisis-discriminante-lineal/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -704,7 +760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../algoritmos-no-lineales/00-introduccion/" class="md-nav__link">
+      <a href="../../algoritmos-no-lineales/00-introduccion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -724,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../algoritmos-no-lineales/01-knn/" class="md-nav__link">
+      <a href="../../algoritmos-no-lineales/01-knn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -744,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../algoritmos-no-lineales/02-naive-bayes/" class="md-nav__link">
+      <a href="../../algoritmos-no-lineales/02-naive-bayes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -807,7 +863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../validacion/00-introduccion/" class="md-nav__link">
+      <a href="../../validacion/00-introduccion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -827,7 +883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../validacion/01-error-prueba-vs-entrenamiento/" class="md-nav__link">
+      <a href="../../validacion/01-error-prueba-vs-entrenamiento/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -847,7 +903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../validacion/02-validacion-dividida/" class="md-nav__link">
+      <a href="../../validacion/02-validacion-dividida/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -867,7 +923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../validacion/03-validacion-cruzada/" class="md-nav__link">
+      <a href="../../validacion/03-validacion-cruzada/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -887,7 +943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../validacion/04-contaminacion-accidental/" class="md-nav__link">
+      <a href="../../validacion/04-contaminacion-accidental/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -912,20 +968,18 @@
       
   
   
-    
-  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -939,7 +993,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Casos de Estudio
@@ -988,7 +1042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../enfermedad-coronaria/01-introduccion/" class="md-nav__link">
+      <a href="../../casos-de-estudio/enfermedad-coronaria/01-introduccion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1008,7 +1062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../enfermedad-coronaria/02-datos/" class="md-nav__link">
+      <a href="../../casos-de-estudio/enfermedad-coronaria/02-datos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1028,7 +1082,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../enfermedad-coronaria/03-regresion-logistica-rapidminer/" class="md-nav__link">
+      <a href="../../casos-de-estudio/enfermedad-coronaria/03-regresion-logistica-rapidminer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1048,7 +1102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../enfermedad-coronaria/04-regresion-logistica-python/" class="md-nav__link">
+      <a href="../../casos-de-estudio/enfermedad-coronaria/04-regresion-logistica-python/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1074,20 +1128,18 @@
                 
   
   
-    
-  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
         
           
           <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
@@ -1101,7 +1153,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7_2">
             <span class="md-nav__icon md-icon"></span>
             Altura de Restos Oseos
@@ -1114,7 +1166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-introduccion/" class="md-nav__link">
+      <a href="../../casos-de-estudio/altura-osea/01-introduccion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1134,7 +1186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-datos/" class="md-nav__link">
+      <a href="../../casos-de-estudio/altura-osea/02-datos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1152,29 +1204,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Modelo de Regresión Lineal en RapidMiner
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../casos-de-estudio/altura-osea/03-regresion-lineal-rapidminer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1183,68 +1215,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#carga-de-datos" class="md-nav__link">
-    Carga de datos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#preprocesamiento" class="md-nav__link">
-    Preprocesamiento
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#entrenamiento" class="md-nav__link">
-    Entrenamiento
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#proceso-completo" class="md-nav__link">
-    Proceso Completo
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#evaluacion" class="md-nav__link">
-    Evaluación
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusiones" class="md-nav__link">
-    Conclusiones
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1256,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../04-regresion-lineal-python/" class="md-nav__link">
+      <a href="../../casos-de-estudio/altura-osea/04-regresion-lineal-python/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1312,43 +1282,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#carga-de-datos" class="md-nav__link">
-    Carga de datos
+  <a href="#python" class="md-nav__link">
+    Python
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#preprocesamiento" class="md-nav__link">
-    Preprocesamiento
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#entrenamiento" class="md-nav__link">
-    Entrenamiento
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#proceso-completo" class="md-nav__link">
-    Proceso Completo
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#evaluacion" class="md-nav__link">
-    Evaluación
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusiones" class="md-nav__link">
-    Conclusiones
+  <a href="#rapidminer" class="md-nav__link">
+    RapidMiner
   </a>
   
 </li>
@@ -1775,36 +1717,784 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="modelo-de-regresion-lineal-en-rapidminer">Modelo de Regresión Lineal en RapidMiner<a class="anchor-link" href="#modelo-de-regresion-lineal-en-rapidminer">¶</a></h1><p>Previo análisis de los datos, llegamos a la conclusión de que un algoritmo de regresión lineal podría ser una buena opción para predecir la altura de una persona según datos recopilados de sus restos óseos. Veremos como implementar este algoritmo en RapidMiner con este caso de estudio.</p>
-<h2 id="carga-de-datos">Carga de datos<a class="anchor-link" href="#carga-de-datos">¶</a></h2><p>Utilizamos el operador <code>Read Access</code> para acceder a la base de datos del archivo <code>Knogler.accdb</code>. Nos aseguramos tambien de seleccionar la tabla <code>Dataindsamling</code> para cargar los datos.</p>
-<p><img alt="Carga de datos" src="../images/rm-rl-01.png"/></p>
-<h2 id="preprocesamiento">Preprocesamiento<a class="anchor-link" href="#preprocesamiento">¶</a></h2><p>Cargados los datos, pasamos a etiquetarlos correctamente. Utilizamos el operador <code>Set Role</code> y marcamos la columna de altura como <code>label</code>, la columna ID como <code>id</code> y las columnas de informacion extra como Notes y Signature como <code>metadata</code>. El resto quedan como <code>regular</code>.</p>
-<p><img alt="Etiquetado de datos" src="../images/rm-rl-02.png"/></p>
-<p>Segunda tarea es la selección de atributos. Conocemos por el análisis exploratorio realizado anteriormente que existen algunas columnas con muchos valores faltantes. Removemos estas columnas con el operador <code>Select Attributes</code> y seleccionamos las columnas que no contengan mas de 40 valores faltantes.</p>
-<p><img alt="Selección de atributos" src="../images/rm-rl-03.png"/></p>
-<p>Tercera tarea son los atributos faltantes. Utilizamos el operador <code>Replace Missing Values</code> para reemplazar los valores faltantes del atributo <code>Canine largest age</code>. Hay otros atributos con valores faltantes, pero estos no tienen tantos valores faltantes, por lo que simplemente removeremos los ejemplos donde esten presentes.</p>
-<p><img alt="Atributos faltantes" src="../images/rm-rl-04.png"/></p>
-<p>Utilizamos el operador <code>Filter Examples</code> para remover los ejemplos con valores faltantes en todos los atributos.</p>
-<p><img alt="Remover ejemplos" src="../images/rm-rl-05.png"/></p>
-<p>Luego convertimos los atributos categoricos a numéricos con el operador <code>Nominal to Numerical</code>, seleccionando convertirlos a enteros únicos. Seleccionamos los atributos <code>Sex</code>, <code>Hyperplasia</code>, y <code>Teeth Scorable</code>.</p>
-<p><img alt="Atributos categoricos" src="../images/rm-rl-06.png"/></p>
-<p>Sexta tarea, es reasignar los tipos de atributo perdidos en las conversiones utilizando el operador <code>Guess Types</code> sobre los atributos numeros, esto nos restaurara los tipos reales.</p>
-<p><img alt="Tipos de atributos" src="../images/rm-rl-07.png"/></p>
-<p>Siguiente, removeremos atributo correlacionados utilizando el operador <code>Remove Correlated Attributes</code>. Seleccionamos un umbral de 0.35, determinado empiricamente.</p>
-<p><img alt="Atributos correlacionados" src="../images/rm-rl-08.png"/></p>
-<p>Cerca el final, pasamos a detectar datos anomalos. Utilizamos el operador <code>Detect Outliers (LOF)</code> para detectar outliers en los datos. Este operador utiliza el algoritmo LOF (Local Outlier Factor) para detectar outliers, creando un atributo nuevo llamado <code>outlier</code> que contiene el factor de outlier para cada ejemplo. Luego utilizamos el operador <code>Filter Examples</code> para remover los ejemplos con un factor de outlier mayor a 2.</p>
-<p><img alt="Datos anomalos" src="../images/rm-rl-09.png"/></p>
-<p>Finalmente, aplicamos una optimizacion de atributos utilizando los operadores <code>Optimize Selection</code> y <code>Select by Weights</code>. El primero nos permite optimizar los pesos de los atributos corriendo un algotimo de regresión lineal interno y mediante forwards selection. El segundo nos permite seleccionar los atributos con un peso mayor a un parametro dado. En este caso, seleccionamos los atributos con un peso mayor a 0.2, y configuraremos la optimizacion de parametros para utilizar 5 generaciones especulativas. Luego, continuaremos con una normalización de los datos utilizando el operador <code>Normalize</code>. Estos ultimos pasos los realizaremos dentro de un <code>Cross Validation</code> para prevenir contaminación accidental de datos.</p>
-<h2 id="entrenamiento">Entrenamiento<a class="anchor-link" href="#entrenamiento">¶</a></h2><p>Para entrenar el modelo, utilizaremos el operador <code>Linear Regression</code>. Este operador nos permite entrenar un modelo de regresión lineal con los datos de entrada. Para evaluar el modelo, utilizaremos el operador <code>Cross Validation</code> que nos permite realizar una validación cruzada de los datos de entrada. Dentro de este operador, utilizaremos los operadores <code>Optimize Selection</code> y <code>Select by Weights</code> para seleccionar los atributos mas importantes.</p>
-<h2 id="proceso-completo">Proceso Completo<a class="anchor-link" href="#proceso-completo">¶</a></h2><p><img alt="Proceso completo 01" src="../images/rm-rl-10.png"/>
-<img alt="Proceso completo 02" src="../images/rm-rl-11.png"/>
-<img alt="Proceso completo 03" src="../images/rm-rl-12.png"/>
-<img alt="Proceso completo 04" src="../images/rm-rl-13.png"/></p>
-<h2 id="evaluacion">Evaluación<a class="anchor-link" href="#evaluacion">¶</a></h2><p>Una vez ejecutado el proceso, podemos ver los resultados de la evaluación del modelo en la pestaña <code>Results</code>. Aquí podemos ver el RMSE o Root Mean Squared Error, que es una medida de la diferencia entre los valores predichos por el modelo y los valores reales.</p>
-<p><img alt="Resultados" src="../images/rm-rl-14.png"/></p>
-<p>En este caso, el RMSE es de 3.589, lo que significa que el modelo tiene un error promedio de ~3.6 cm en sus predicciones. Tambien podemos graficares los valores reales contra los valores predichos por el modelo, para ver como se comporta.</p>
-<p><img alt="Resultados" src="../images/rm-rl-15.png"/></p>
-<h2 id="conclusiones">Conclusiones<a class="anchor-link" href="#conclusiones">¶</a></h2><p>Es mi opinion que dado el error para el modelo entrenado, regresión lineal presenta una buena opción para predecir la altura de una persona según datos recopilados de sus restos óseos. Dados los pesos reportados por el modelo de regresión lineal entrenado, parece ser que los unicos datos necesarios del conjunto para realizar las predicciones son el sexo de la persona, y la longitud del femur.</p>
+<h1 id="valores-faltantes">Valores Faltantes<a class="anchor-link" href="#valores-faltantes">¶</a></h1><p>Es los suficientemente común, al trabajar con un problema de aprendizaje automatizado, el encontrarse que el conjunto de datos a utilizar tiene valores faltantes. Esto puede resultar en modelos que no funcionan correctamente, o en la imposibilidad de utilizar ciertos algoritmos. Por lo tanto, es importante saber cómo manejar estos valores faltantes.</p>
+<p>Al encontrarse con valores faltantes, uno puede realizar cuatro posibles acciones:</p>
+<ul>
+<li>Dejarlos como están. El peor de los casos, ya que la mayoría de los algoritmos de aprendizaje automatizado no pueden trabajar con valores faltantes.</li>
+<li>Imputar valores faltantes. Esto significa reemplazar los valores faltantes con algún valor. Por ejemplo, se puede reemplazar con la media de los valores de la columna, o la moda.</li>
+<li>Eliminar las filas que contienen valores faltantes. Esto puede ser una buena opción si el número de filas con valores faltantes es pequeño.</li>
+<li>Eliminar las columnas que contienen valores faltantes. Si la columna tiene muchos valores faltantes, puede ser una buena opción eliminarla.</li>
+</ul>
+<p>Veamos como realizar varias de estas tareas.</p>
+<h2 id="python">Python<a class="anchor-link" href="#python">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-1">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-1">import pandas as pd
+import numpy as np</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-2">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">dataset</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'./datasets/full.csv'</span><span class="p">)</span>
+<span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-2">dataset: pd.DataFrame = pd.read_csv('./datasets/full.csv')
+dataset.info()</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 899 entries, 0 to 898
+Data columns (total 77 columns):
+ #   Column    Non-Null Count  Dtype  
+---  ------    --------------  -----  
+ 0   dataset   899 non-null    object 
+ 1   id        899 non-null    int64  
+ 2   ccf       899 non-null    int64  
+ 3   age       899 non-null    int64  
+ 4   sex       899 non-null    int64  
+ 5   painloc   617 non-null    float64
+ 6   painexer  617 non-null    float64
+ 7   relrest   613 non-null    float64
+ 8   pncaden   0 non-null      float64
+ 9   cp        899 non-null    int64  
+ 10  trestbps  840 non-null    float64
+ 11  htn       865 non-null    float64
+ 12  chol      869 non-null    float64
+ 13  smoke     230 non-null    float64
+ 14  cigs      479 non-null    float64
+ 15  years     467 non-null    float64
+ 16  fbs       809 non-null    float64
+ 17  dm        95 non-null     float64
+ 18  famhist   477 non-null    float64
+ 19  restecg   897 non-null    float64
+ 20  ekgmo     846 non-null    float64
+ 21  ekgday    845 non-null    float64
+ 22  ekgyr     846 non-null    float64
+ 23  dig       831 non-null    float64
+ 24  prop      833 non-null    float64
+ 25  nitr      834 non-null    float64
+ 26  pro       836 non-null    float64
+ 27  diuretic  817 non-null    float64
+ 28  proto     787 non-null    float64
+ 29  thaldur   843 non-null    float64
+ 30  thaltime  446 non-null    float64
+ 31  met       794 non-null    float64
+ 32  thalach   844 non-null    float64
+ 33  thalrest  843 non-null    float64
+ 34  tpeakbps  836 non-null    float64
+ 35  tpeakbpd  836 non-null    float64
+ 36  dummy     840 non-null    float64
+ 37  trestbpd  840 non-null    float64
+ 38  exang     844 non-null    float64
+ 39  xhypo     841 non-null    float64
+ 40  oldpeak   837 non-null    float64
+ 41  slope     591 non-null    float64
+ 42  rldv5     474 non-null    float64
+ 43  rldv5e    757 non-null    float64
+ 44  ca        291 non-null    float64
+ 45  restckm   0 non-null      float64
+ 46  exerckm   1 non-null      float64
+ 47  restef    28 non-null     float64
+ 48  restwm    30 non-null     float64
+ 49  exeref    2 non-null      float64
+ 50  exerwm    5 non-null      float64
+ 51  thal      422 non-null    float64
+ 52  thalsev   130 non-null    float64
+ 53  thalpul   44 non-null     float64
+ 54  earlobe   1 non-null      float64
+ 55  cmo       888 non-null    float64
+ 56  cday      890 non-null    float64
+ 57  cyr       890 non-null    float64
+ 58  num       899 non-null    int64  
+ 59  lmt       624 non-null    float64
+ 60  ladprox   663 non-null    float64
+ 61  laddist   653 non-null    float64
+ 62  diag      341 non-null    float64
+ 63  cxmain    664 non-null    float64
+ 64  ramus     332 non-null    float64
+ 65  om1       628 non-null    float64
+ 66  om2       327 non-null    float64
+ 67  rcaprox   654 non-null    float64
+ 68  rcadist   629 non-null    float64
+ 69  lvx1      880 non-null    float64
+ 70  lvx2      880 non-null    float64
+ 71  lvx3      880 non-null    float64
+ 72  lvx4      880 non-null    float64
+ 73  lvf       883 non-null    float64
+ 74  cathef    311 non-null    float64
+ 75  junk      119 non-null    float64
+ 76  name      899 non-null    object 
+dtypes: float64(69), int64(6), object(2)
+memory usage: 540.9+ KB
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Asignemos tipos de datos correctos a las columnas:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-3">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">dataset</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">dataset</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">'string'</span><span class="p">)</span>
+        <span class="n">dataset</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+        <span class="n">dataset</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">pass</span>
+<span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-3">for column in dataset.columns:
+    try:
+        dataset[column] = dataset[column].astype('string')
+        dataset[column] = dataset[column].astype(float)
+        dataset[column] = dataset[column].astype(int)
+    except:
+        pass
+dataset.info()</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 899 entries, 0 to 898
+Data columns (total 77 columns):
+ #   Column    Non-Null Count  Dtype  
+---  ------    --------------  -----  
+ 0   dataset   899 non-null    string 
+ 1   id        899 non-null    int32  
+ 2   ccf       899 non-null    int32  
+ 3   age       899 non-null    int32  
+ 4   sex       899 non-null    int32  
+ 5   painloc   617 non-null    float64
+ 6   painexer  617 non-null    float64
+ 7   relrest   613 non-null    float64
+ 8   pncaden   0 non-null      float64
+ 9   cp        899 non-null    int32  
+ 10  trestbps  840 non-null    float64
+ 11  htn       865 non-null    float64
+ 12  chol      869 non-null    float64
+ 13  smoke     230 non-null    float64
+ 14  cigs      479 non-null    float64
+ 15  years     467 non-null    float64
+ 16  fbs       809 non-null    float64
+ 17  dm        95 non-null     float64
+ 18  famhist   477 non-null    float64
+ 19  restecg   897 non-null    float64
+ 20  ekgmo     846 non-null    float64
+ 21  ekgday    845 non-null    float64
+ 22  ekgyr     846 non-null    float64
+ 23  dig       831 non-null    float64
+ 24  prop      833 non-null    float64
+ 25  nitr      834 non-null    float64
+ 26  pro       836 non-null    float64
+ 27  diuretic  817 non-null    float64
+ 28  proto     787 non-null    float64
+ 29  thaldur   843 non-null    float64
+ 30  thaltime  446 non-null    float64
+ 31  met       794 non-null    float64
+ 32  thalach   844 non-null    float64
+ 33  thalrest  843 non-null    float64
+ 34  tpeakbps  836 non-null    float64
+ 35  tpeakbpd  836 non-null    float64
+ 36  dummy     840 non-null    float64
+ 37  trestbpd  840 non-null    float64
+ 38  exang     844 non-null    float64
+ 39  xhypo     841 non-null    float64
+ 40  oldpeak   837 non-null    float64
+ 41  slope     591 non-null    float64
+ 42  rldv5     474 non-null    float64
+ 43  rldv5e    757 non-null    float64
+ 44  ca        291 non-null    float64
+ 45  restckm   0 non-null      float64
+ 46  exerckm   1 non-null      float64
+ 47  restef    28 non-null     float64
+ 48  restwm    30 non-null     float64
+ 49  exeref    2 non-null      float64
+ 50  exerwm    5 non-null      float64
+ 51  thal      422 non-null    float64
+ 52  thalsev   130 non-null    float64
+ 53  thalpul   44 non-null     float64
+ 54  earlobe   1 non-null      float64
+ 55  cmo       888 non-null    float64
+ 56  cday      890 non-null    float64
+ 57  cyr       890 non-null    float64
+ 58  num       899 non-null    int32  
+ 59  lmt       624 non-null    float64
+ 60  ladprox   663 non-null    float64
+ 61  laddist   653 non-null    float64
+ 62  diag      341 non-null    float64
+ 63  cxmain    664 non-null    float64
+ 64  ramus     332 non-null    float64
+ 65  om1       628 non-null    float64
+ 66  om2       327 non-null    float64
+ 67  rcaprox   654 non-null    float64
+ 68  rcadist   629 non-null    float64
+ 69  lvx1      880 non-null    float64
+ 70  lvx2      880 non-null    float64
+ 71  lvx3      880 non-null    float64
+ 72  lvx4      880 non-null    float64
+ 73  lvf       883 non-null    float64
+ 74  cathef    311 non-null    float64
+ 75  junk      119 non-null    float64
+ 76  name      899 non-null    string 
+dtypes: float64(69), int32(6), string(2)
+memory usage: 519.9 KB
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Eliminemos las columnas que tienen mas del 30% de valores faltantes.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-4">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">thresh</span><span class="o">=</span><span class="mf">0.7</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="p">))</span>
+<span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-4">dataset = dataset.dropna(axis=1, thresh=0.7*len(dataset))
+dataset.info()</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 899 entries, 0 to 898
+Data columns (total 46 columns):
+ #   Column    Non-Null Count  Dtype  
+---  ------    --------------  -----  
+ 0   dataset   899 non-null    string 
+ 1   id        899 non-null    int32  
+ 2   ccf       899 non-null    int32  
+ 3   age       899 non-null    int32  
+ 4   sex       899 non-null    int32  
+ 5   cp        899 non-null    int32  
+ 6   trestbps  840 non-null    float64
+ 7   htn       865 non-null    float64
+ 8   chol      869 non-null    float64
+ 9   fbs       809 non-null    float64
+ 10  restecg   897 non-null    float64
+ 11  ekgmo     846 non-null    float64
+ 12  ekgday    845 non-null    float64
+ 13  ekgyr     846 non-null    float64
+ 14  dig       831 non-null    float64
+ 15  prop      833 non-null    float64
+ 16  nitr      834 non-null    float64
+ 17  pro       836 non-null    float64
+ 18  diuretic  817 non-null    float64
+ 19  proto     787 non-null    float64
+ 20  thaldur   843 non-null    float64
+ 21  met       794 non-null    float64
+ 22  thalach   844 non-null    float64
+ 23  thalrest  843 non-null    float64
+ 24  tpeakbps  836 non-null    float64
+ 25  tpeakbpd  836 non-null    float64
+ 26  dummy     840 non-null    float64
+ 27  trestbpd  840 non-null    float64
+ 28  exang     844 non-null    float64
+ 29  xhypo     841 non-null    float64
+ 30  oldpeak   837 non-null    float64
+ 31  rldv5e    757 non-null    float64
+ 32  cmo       888 non-null    float64
+ 33  cday      890 non-null    float64
+ 34  cyr       890 non-null    float64
+ 35  num       899 non-null    int32  
+ 36  ladprox   663 non-null    float64
+ 37  laddist   653 non-null    float64
+ 38  cxmain    664 non-null    float64
+ 39  rcaprox   654 non-null    float64
+ 40  lvx1      880 non-null    float64
+ 41  lvx2      880 non-null    float64
+ 42  lvx3      880 non-null    float64
+ 43  lvx4      880 non-null    float64
+ 44  lvf       883 non-null    float64
+ 45  name      899 non-null    string 
+dtypes: float64(38), int32(6), string(2)
+memory usage: 302.1 KB
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Inputemos valores faltantes con la media, para aquellos valores que sean numéricos reales.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-5">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">dataset</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">dataset</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">:</span>
+        <span class="n">dataset</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">dataset</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-5">for column in dataset.columns:
+    if dataset[column].dtype == np.float64:
+        dataset[column] = dataset[column].fillna(dataset[column].mean())
+dataset.info()</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 899 entries, 0 to 898
+Data columns (total 46 columns):
+ #   Column    Non-Null Count  Dtype  
+---  ------    --------------  -----  
+ 0   dataset   899 non-null    string 
+ 1   id        899 non-null    int32  
+ 2   ccf       899 non-null    int32  
+ 3   age       899 non-null    int32  
+ 4   sex       899 non-null    int32  
+ 5   cp        899 non-null    int32  
+ 6   trestbps  899 non-null    float64
+ 7   htn       899 non-null    float64
+ 8   chol      899 non-null    float64
+ 9   fbs       899 non-null    float64
+ 10  restecg   899 non-null    float64
+ 11  ekgmo     899 non-null    float64
+ 12  ekgday    899 non-null    float64
+ 13  ekgyr     899 non-null    float64
+ 14  dig       899 non-null    float64
+ 15  prop      899 non-null    float64
+ 16  nitr      899 non-null    float64
+ 17  pro       899 non-null    float64
+ 18  diuretic  899 non-null    float64
+ 19  proto     899 non-null    float64
+ 20  thaldur   899 non-null    float64
+ 21  met       899 non-null    float64
+ 22  thalach   899 non-null    float64
+ 23  thalrest  899 non-null    float64
+ 24  tpeakbps  899 non-null    float64
+ 25  tpeakbpd  899 non-null    float64
+ 26  dummy     899 non-null    float64
+ 27  trestbpd  899 non-null    float64
+ 28  exang     899 non-null    float64
+ 29  xhypo     899 non-null    float64
+ 30  oldpeak   899 non-null    float64
+ 31  rldv5e    899 non-null    float64
+ 32  cmo       899 non-null    float64
+ 33  cday      899 non-null    float64
+ 34  cyr       899 non-null    float64
+ 35  num       899 non-null    int32  
+ 36  ladprox   899 non-null    float64
+ 37  laddist   899 non-null    float64
+ 38  cxmain    899 non-null    float64
+ 39  rcaprox   899 non-null    float64
+ 40  lvx1      899 non-null    float64
+ 41  lvx2      899 non-null    float64
+ 42  lvx3      899 non-null    float64
+ 43  lvx4      899 non-null    float64
+ 44  lvf       899 non-null    float64
+ 45  name      899 non-null    string 
+dtypes: float64(38), int32(6), string(2)
+memory usage: 302.1 KB
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Por ultimo, eliminemos las filas que tengan valores faltantes.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-6">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">'any'</span><span class="p">)</span>
+<span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-6">dataset = dataset.dropna(axis=0, how='any')
+dataset.info()</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 899 entries, 0 to 898
+Data columns (total 46 columns):
+ #   Column    Non-Null Count  Dtype  
+---  ------    --------------  -----  
+ 0   dataset   899 non-null    string 
+ 1   id        899 non-null    int32  
+ 2   ccf       899 non-null    int32  
+ 3   age       899 non-null    int32  
+ 4   sex       899 non-null    int32  
+ 5   cp        899 non-null    int32  
+ 6   trestbps  899 non-null    float64
+ 7   htn       899 non-null    float64
+ 8   chol      899 non-null    float64
+ 9   fbs       899 non-null    float64
+ 10  restecg   899 non-null    float64
+ 11  ekgmo     899 non-null    float64
+ 12  ekgday    899 non-null    float64
+ 13  ekgyr     899 non-null    float64
+ 14  dig       899 non-null    float64
+ 15  prop      899 non-null    float64
+ 16  nitr      899 non-null    float64
+ 17  pro       899 non-null    float64
+ 18  diuretic  899 non-null    float64
+ 19  proto     899 non-null    float64
+ 20  thaldur   899 non-null    float64
+ 21  met       899 non-null    float64
+ 22  thalach   899 non-null    float64
+ 23  thalrest  899 non-null    float64
+ 24  tpeakbps  899 non-null    float64
+ 25  tpeakbpd  899 non-null    float64
+ 26  dummy     899 non-null    float64
+ 27  trestbpd  899 non-null    float64
+ 28  exang     899 non-null    float64
+ 29  xhypo     899 non-null    float64
+ 30  oldpeak   899 non-null    float64
+ 31  rldv5e    899 non-null    float64
+ 32  cmo       899 non-null    float64
+ 33  cday      899 non-null    float64
+ 34  cyr       899 non-null    float64
+ 35  num       899 non-null    int32  
+ 36  ladprox   899 non-null    float64
+ 37  laddist   899 non-null    float64
+ 38  cxmain    899 non-null    float64
+ 39  rcaprox   899 non-null    float64
+ 40  lvx1      899 non-null    float64
+ 41  lvx2      899 non-null    float64
+ 42  lvx3      899 non-null    float64
+ 43  lvx4      899 non-null    float64
+ 44  lvf       899 non-null    float64
+ 45  name      899 non-null    string 
+dtypes: float64(38), int32(6), string(2)
+memory usage: 302.1 KB
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>El resultado es un conjunto de datos que no tiene valores faltantes.</p>
+<h2 id="rapidminer">RapidMiner<a class="anchor-link" href="#rapidminer">¶</a></h2><p>En RapidMiner el proceso es complicado. Desafortunadamente no existen operadores que permitan remover columnas basados en cantidad o proporcion de valores faltantes. Para realizar esto crearemos un proceso que:</p>
+<ol>
+<li>Transponga el conjunto de datos. Permitiendonos trabajar con las columnas como filas.</li>
+<li>Cree dos nuevas columnas: una con la cantidad de datos faltantes por ejemplo, y otra con la cantidad de atributos totales.</li>
+<li>Elimine las filas que tengan mas del 30% de valores faltantes.</li>
+<li>Transponga el conjunto de datos nuevamente.</li>
+</ol>
+<p><img alt="Valores Faltantes 01" src="../images/vf-01.png"/></p>
+<p>La definicion del proceso es la siguiente:</p>
+<div class="highlight"><pre><span></span><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span><span class="nt">&lt;process</span><span class="w"> </span><span class="na">version=</span><span class="s">"10.2.000"</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;operator</span><span class="w"> </span><span class="na">activated=</span><span class="s">"true"</span><span class="w"> </span><span class="na">class=</span><span class="s">"subprocess"</span><span class="w"> </span><span class="na">compatibility=</span><span class="s">"10.2.000"</span><span class="w"> </span><span class="na">expanded=</span><span class="s">"true"</span><span class="w"> </span><span class="na">height=</span><span class="s">"82"</span><span class="w"> </span><span class="na">name=</span><span class="s">"Remover Columnas Vacias"</span><span class="w"> </span><span class="na">width=</span><span class="s">"90"</span><span class="w"> </span><span class="na">x=</span><span class="s">"179"</span><span class="w"> </span><span class="na">y=</span><span class="s">"34"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;process</span><span class="w"> </span><span class="na">expanded=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;operator</span><span class="w"> </span><span class="na">activated=</span><span class="s">"true"</span><span class="w"> </span><span class="na">class=</span><span class="s">"blending:rename"</span><span class="w"> </span><span class="na">compatibility=</span><span class="s">"10.2.000"</span><span class="w"> </span><span class="na">expanded=</span><span class="s">"true"</span><span class="w"> </span><span class="na">height=</span><span class="s">"82"</span><span class="w"> </span><span class="na">name=</span><span class="s">"Rename"</span><span class="w"> </span><span class="na">width=</span><span class="s">"90"</span><span class="w"> </span><span class="na">x=</span><span class="s">"179"</span><span class="w"> </span><span class="na">y=</span><span class="s">"34"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;list</span><span class="w"> </span><span class="na">key=</span><span class="s">"rename attributes"</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"id"</span><span class="w"> </span><span class="na">value=</span><span class="s">"id_data"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/list&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"from_attribute"</span><span class="w"> </span><span class="na">value=</span><span class="s">""</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"to_attribute"</span><span class="w"> </span><span class="na">value=</span><span class="s">""</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/operator&gt;</span>
+<span class="w">      </span><span class="nt">&lt;operator</span><span class="w"> </span><span class="na">activated=</span><span class="s">"true"</span><span class="w"> </span><span class="na">class=</span><span class="s">"transpose"</span><span class="w"> </span><span class="na">compatibility=</span><span class="s">"10.2.000"</span><span class="w"> </span><span class="na">expanded=</span><span class="s">"true"</span><span class="w"> </span><span class="na">height=</span><span class="s">"82"</span><span class="w"> </span><span class="na">name=</span><span class="s">"Transpose"</span><span class="w"> </span><span class="na">width=</span><span class="s">"90"</span><span class="w"> </span><span class="na">x=</span><span class="s">"45"</span><span class="w"> </span><span class="na">y=</span><span class="s">"136"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;operator</span><span class="w"> </span><span class="na">activated=</span><span class="s">"true"</span><span class="w"> </span><span class="na">class=</span><span class="s">"multiply"</span><span class="w"> </span><span class="na">compatibility=</span><span class="s">"10.2.000"</span><span class="w"> </span><span class="na">expanded=</span><span class="s">"true"</span><span class="w"> </span><span class="na">height=</span><span class="s">"103"</span><span class="w"> </span><span class="na">name=</span><span class="s">"Multiply"</span><span class="w"> </span><span class="na">width=</span><span class="s">"90"</span><span class="w"> </span><span class="na">x=</span><span class="s">"179"</span><span class="w"> </span><span class="na">y=</span><span class="s">"136"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;operator</span><span class="w"> </span><span class="na">activated=</span><span class="s">"true"</span><span class="w"> </span><span class="na">class=</span><span class="s">"generate_aggregation"</span><span class="w"> </span><span class="na">compatibility=</span><span class="s">"10.2.000"</span><span class="w"> </span><span class="na">expanded=</span><span class="s">"true"</span><span class="w"> </span><span class="na">height=</span><span class="s">"82"</span><span class="w"> </span><span class="na">name=</span><span class="s">"Generate Aggregation"</span><span class="w"> </span><span class="na">width=</span><span class="s">"90"</span><span class="w"> </span><span class="na">x=</span><span class="s">"313"</span><span class="w"> </span><span class="na">y=</span><span class="s">"34"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"attribute_name"</span><span class="w"> </span><span class="na">value=</span><span class="s">"no_missing_count"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"attribute_filter_type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"all"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"attribute"</span><span class="w"> </span><span class="na">value=</span><span class="s">""</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"attributes"</span><span class="w"> </span><span class="na">value=</span><span class="s">""</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"use_except_expression"</span><span class="w"> </span><span class="na">value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"value_type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"attribute_value"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"use_value_type_exception"</span><span class="w"> </span><span class="na">value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"except_value_type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"time"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"block_type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"attribute_block"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"use_block_type_exception"</span><span class="w"> </span><span class="na">value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"except_block_type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"value_matrix_row_start"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"invert_selection"</span><span class="w"> </span><span class="na">value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"include_special_attributes"</span><span class="w"> </span><span class="na">value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"aggregation_function"</span><span class="w"> </span><span class="na">value=</span><span class="s">"count"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"concatenation_separator"</span><span class="w"> </span><span class="na">value=</span><span class="s">"|"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"keep_all"</span><span class="w"> </span><span class="na">value=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"ignore_missings"</span><span class="w"> </span><span class="na">value=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"ignore_missing_attributes"</span><span class="w"> </span><span class="na">value=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/operator&gt;</span>
+<span class="w">      </span><span class="nt">&lt;operator</span><span class="w"> </span><span class="na">activated=</span><span class="s">"true"</span><span class="w"> </span><span class="na">class=</span><span class="s">"extract_macro"</span><span class="w"> </span><span class="na">compatibility=</span><span class="s">"10.2.000"</span><span class="w"> </span><span class="na">expanded=</span><span class="s">"true"</span><span class="w"> </span><span class="na">height=</span><span class="s">"68"</span><span class="w"> </span><span class="na">name=</span><span class="s">"Extract Macro"</span><span class="w"> </span><span class="na">width=</span><span class="s">"90"</span><span class="w"> </span><span class="na">x=</span><span class="s">"313"</span><span class="w"> </span><span class="na">y=</span><span class="s">"136"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"macro"</span><span class="w"> </span><span class="na">value=</span><span class="s">"count"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"macro_type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"number_of_attributes"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"statistics"</span><span class="w"> </span><span class="na">value=</span><span class="s">"average"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"attribute_name"</span><span class="w"> </span><span class="na">value=</span><span class="s">""</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;list</span><span class="w"> </span><span class="na">key=</span><span class="s">"additional_macros"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/operator&gt;</span>
+<span class="w">      </span><span class="nt">&lt;operator</span><span class="w"> </span><span class="na">activated=</span><span class="s">"true"</span><span class="w"> </span><span class="na">class=</span><span class="s">"blending:generate_columns"</span><span class="w"> </span><span class="na">compatibility=</span><span class="s">"10.2.000"</span><span class="w"> </span><span class="na">expanded=</span><span class="s">"true"</span><span class="w"> </span><span class="na">height=</span><span class="s">"82"</span><span class="w"> </span><span class="na">name=</span><span class="s">"Generate Attributes (2)"</span><span class="w"> </span><span class="na">width=</span><span class="s">"90"</span><span class="w"> </span><span class="na">x=</span><span class="s">"447"</span><span class="w"> </span><span class="na">y=</span><span class="s">"136"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;list</span><span class="w"> </span><span class="na">key=</span><span class="s">"function_descriptions"</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"attr_count"</span><span class="w"> </span><span class="na">value=</span><span class="s">"%{count}"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/list&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"keep_all_columns"</span><span class="w"> </span><span class="na">value=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/operator&gt;</span>
+<span class="w">      </span><span class="nt">&lt;operator</span><span class="w"> </span><span class="na">activated=</span><span class="s">"true"</span><span class="w"> </span><span class="na">class=</span><span class="s">"concurrency:join"</span><span class="w"> </span><span class="na">compatibility=</span><span class="s">"10.2.000"</span><span class="w"> </span><span class="na">expanded=</span><span class="s">"true"</span><span class="w"> </span><span class="na">height=</span><span class="s">"82"</span><span class="w"> </span><span class="na">name=</span><span class="s">"Join"</span><span class="w"> </span><span class="na">width=</span><span class="s">"90"</span><span class="w"> </span><span class="na">x=</span><span class="s">"447"</span><span class="w"> </span><span class="na">y=</span><span class="s">"34"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"remove_double_attributes"</span><span class="w"> </span><span class="na">value=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"join_type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"inner"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"use_id_attribute_as_key"</span><span class="w"> </span><span class="na">value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;list</span><span class="w"> </span><span class="na">key=</span><span class="s">"key_attributes"</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"id"</span><span class="w"> </span><span class="na">value=</span><span class="s">"id"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/list&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"keep_both_join_attributes"</span><span class="w"> </span><span class="na">value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/operator&gt;</span>
+<span class="w">      </span><span class="nt">&lt;operator</span><span class="w"> </span><span class="na">activated=</span><span class="s">"true"</span><span class="w"> </span><span class="na">class=</span><span class="s">"guess_types"</span><span class="w"> </span><span class="na">compatibility=</span><span class="s">"10.2.000"</span><span class="w"> </span><span class="na">expanded=</span><span class="s">"true"</span><span class="w"> </span><span class="na">height=</span><span class="s">"82"</span><span class="w"> </span><span class="na">name=</span><span class="s">"Guess Types"</span><span class="w"> </span><span class="na">width=</span><span class="s">"90"</span><span class="w"> </span><span class="na">x=</span><span class="s">"581"</span><span class="w"> </span><span class="na">y=</span><span class="s">"34"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"attribute_filter_type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"single"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"attribute"</span><span class="w"> </span><span class="na">value=</span><span class="s">"attr_count"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"attributes"</span><span class="w"> </span><span class="na">value=</span><span class="s">""</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"use_except_expression"</span><span class="w"> </span><span class="na">value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"value_type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"attribute_value"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"use_value_type_exception"</span><span class="w"> </span><span class="na">value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"except_value_type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"time"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"block_type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"attribute_block"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"use_block_type_exception"</span><span class="w"> </span><span class="na">value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"except_block_type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"value_matrix_row_start"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"invert_selection"</span><span class="w"> </span><span class="na">value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"include_special_attributes"</span><span class="w"> </span><span class="na">value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"decimal_point_character"</span><span class="w"> </span><span class="na">value=</span><span class="s">"."</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/operator&gt;</span>
+<span class="w">      </span><span class="nt">&lt;operator</span><span class="w"> </span><span class="na">activated=</span><span class="s">"true"</span><span class="w"> </span><span class="na">class=</span><span class="s">"filter_examples"</span><span class="w"> </span><span class="na">compatibility=</span><span class="s">"10.2.000"</span><span class="w"> </span><span class="na">expanded=</span><span class="s">"true"</span><span class="w"> </span><span class="na">height=</span><span class="s">"103"</span><span class="w"> </span><span class="na">name=</span><span class="s">"Filter Examples"</span><span class="w"> </span><span class="na">width=</span><span class="s">"90"</span><span class="w"> </span><span class="na">x=</span><span class="s">"581"</span><span class="w"> </span><span class="na">y=</span><span class="s">"136"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"parameter_expression"</span><span class="w"> </span><span class="na">value=</span><span class="s">"(no_missing_count / attr_count)&amp;gt;=0.5"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"condition_class"</span><span class="w"> </span><span class="na">value=</span><span class="s">"expression"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"invert_filter"</span><span class="w"> </span><span class="na">value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;list</span><span class="w"> </span><span class="na">key=</span><span class="s">"filters_list"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"filters_logic_and"</span><span class="w"> </span><span class="na">value=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"filters_check_metadata"</span><span class="w"> </span><span class="na">value=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/operator&gt;</span>
+<span class="w">      </span><span class="nt">&lt;operator</span><span class="w"> </span><span class="na">activated=</span><span class="s">"true"</span><span class="w"> </span><span class="na">class=</span><span class="s">"blending:select_attributes"</span><span class="w"> </span><span class="na">compatibility=</span><span class="s">"10.2.000"</span><span class="w"> </span><span class="na">expanded=</span><span class="s">"true"</span><span class="w"> </span><span class="na">height=</span><span class="s">"82"</span><span class="w"> </span><span class="na">name=</span><span class="s">"Select Attributes"</span><span class="w"> </span><span class="na">width=</span><span class="s">"90"</span><span class="w"> </span><span class="na">x=</span><span class="s">"715"</span><span class="w"> </span><span class="na">y=</span><span class="s">"136"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"exclude attributes"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"attribute_filter_type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"a subset"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"select_attribute"</span><span class="w"> </span><span class="na">value=</span><span class="s">""</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"select_subset"</span><span class="w"> </span><span class="na">value=</span><span class="s">"attr_count␞no_missing_count"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"also_apply_to_special_attributes_(id,_label..)"</span><span class="w"> </span><span class="na">value=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/operator&gt;</span>
+<span class="w">      </span><span class="nt">&lt;operator</span><span class="w"> </span><span class="na">activated=</span><span class="s">"true"</span><span class="w"> </span><span class="na">class=</span><span class="s">"transpose"</span><span class="w"> </span><span class="na">compatibility=</span><span class="s">"10.2.000"</span><span class="w"> </span><span class="na">expanded=</span><span class="s">"true"</span><span class="w"> </span><span class="na">height=</span><span class="s">"82"</span><span class="w"> </span><span class="na">name=</span><span class="s">"Transpose (2)"</span><span class="w"> </span><span class="na">width=</span><span class="s">"90"</span><span class="w"> </span><span class="na">x=</span><span class="s">"715"</span><span class="w"> </span><span class="na">y=</span><span class="s">"34"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;operator</span><span class="w"> </span><span class="na">activated=</span><span class="s">"true"</span><span class="w"> </span><span class="na">class=</span><span class="s">"guess_types"</span><span class="w"> </span><span class="na">compatibility=</span><span class="s">"10.2.000"</span><span class="w"> </span><span class="na">expanded=</span><span class="s">"true"</span><span class="w"> </span><span class="na">height=</span><span class="s">"82"</span><span class="w"> </span><span class="na">name=</span><span class="s">"Guess Types (2)"</span><span class="w"> </span><span class="na">width=</span><span class="s">"90"</span><span class="w"> </span><span class="na">x=</span><span class="s">"849"</span><span class="w"> </span><span class="na">y=</span><span class="s">"34"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"attribute_filter_type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"all"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"attribute"</span><span class="w"> </span><span class="na">value=</span><span class="s">"attr_count"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"attributes"</span><span class="w"> </span><span class="na">value=</span><span class="s">""</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"use_except_expression"</span><span class="w"> </span><span class="na">value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"value_type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"attribute_value"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"use_value_type_exception"</span><span class="w"> </span><span class="na">value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"except_value_type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"time"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"block_type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"attribute_block"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"use_block_type_exception"</span><span class="w"> </span><span class="na">value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"except_block_type"</span><span class="w"> </span><span class="na">value=</span><span class="s">"value_matrix_row_start"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"invert_selection"</span><span class="w"> </span><span class="na">value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"include_special_attributes"</span><span class="w"> </span><span class="na">value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;parameter</span><span class="w"> </span><span class="na">key=</span><span class="s">"decimal_point_character"</span><span class="w"> </span><span class="na">value=</span><span class="s">"."</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/operator&gt;</span>
+<span class="w">      </span><span class="nt">&lt;connect</span><span class="w"> </span><span class="na">from_port=</span><span class="s">"in 1"</span><span class="w"> </span><span class="na">to_op=</span><span class="s">"Rename"</span><span class="w"> </span><span class="na">to_port=</span><span class="s">"example set input"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;connect</span><span class="w"> </span><span class="na">from_op=</span><span class="s">"Rename"</span><span class="w"> </span><span class="na">from_port=</span><span class="s">"example set output"</span><span class="w"> </span><span class="na">to_op=</span><span class="s">"Transpose"</span><span class="w"> </span><span class="na">to_port=</span><span class="s">"example set input"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;connect</span><span class="w"> </span><span class="na">from_op=</span><span class="s">"Transpose"</span><span class="w"> </span><span class="na">from_port=</span><span class="s">"example set output"</span><span class="w"> </span><span class="na">to_op=</span><span class="s">"Multiply"</span><span class="w"> </span><span class="na">to_port=</span><span class="s">"input"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;connect</span><span class="w"> </span><span class="na">from_op=</span><span class="s">"Multiply"</span><span class="w"> </span><span class="na">from_port=</span><span class="s">"output 1"</span><span class="w"> </span><span class="na">to_op=</span><span class="s">"Generate Aggregation"</span><span class="w"> </span><span class="na">to_port=</span><span class="s">"example set input"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;connect</span><span class="w"> </span><span class="na">from_op=</span><span class="s">"Multiply"</span><span class="w"> </span><span class="na">from_port=</span><span class="s">"output 2"</span><span class="w"> </span><span class="na">to_op=</span><span class="s">"Extract Macro"</span><span class="w"> </span><span class="na">to_port=</span><span class="s">"example set"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;connect</span><span class="w"> </span><span class="na">from_op=</span><span class="s">"Generate Aggregation"</span><span class="w"> </span><span class="na">from_port=</span><span class="s">"example set output"</span><span class="w"> </span><span class="na">to_op=</span><span class="s">"Join"</span><span class="w"> </span><span class="na">to_port=</span><span class="s">"left"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;connect</span><span class="w"> </span><span class="na">from_op=</span><span class="s">"Extract Macro"</span><span class="w"> </span><span class="na">from_port=</span><span class="s">"example set"</span><span class="w"> </span><span class="na">to_op=</span><span class="s">"Generate Attributes (2)"</span><span class="w"> </span><span class="na">to_port=</span><span class="s">"table input"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;connect</span><span class="w"> </span><span class="na">from_op=</span><span class="s">"Generate Attributes (2)"</span><span class="w"> </span><span class="na">from_port=</span><span class="s">"table output"</span><span class="w"> </span><span class="na">to_op=</span><span class="s">"Join"</span><span class="w"> </span><span class="na">to_port=</span><span class="s">"right"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;connect</span><span class="w"> </span><span class="na">from_op=</span><span class="s">"Join"</span><span class="w"> </span><span class="na">from_port=</span><span class="s">"join"</span><span class="w"> </span><span class="na">to_op=</span><span class="s">"Guess Types"</span><span class="w"> </span><span class="na">to_port=</span><span class="s">"example set input"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;connect</span><span class="w"> </span><span class="na">from_op=</span><span class="s">"Guess Types"</span><span class="w"> </span><span class="na">from_port=</span><span class="s">"example set output"</span><span class="w"> </span><span class="na">to_op=</span><span class="s">"Filter Examples"</span><span class="w"> </span><span class="na">to_port=</span><span class="s">"example set input"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;connect</span><span class="w"> </span><span class="na">from_op=</span><span class="s">"Filter Examples"</span><span class="w"> </span><span class="na">from_port=</span><span class="s">"example set output"</span><span class="w"> </span><span class="na">to_op=</span><span class="s">"Select Attributes"</span><span class="w"> </span><span class="na">to_port=</span><span class="s">"example set input"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;connect</span><span class="w"> </span><span class="na">from_op=</span><span class="s">"Select Attributes"</span><span class="w"> </span><span class="na">from_port=</span><span class="s">"example set output"</span><span class="w"> </span><span class="na">to_op=</span><span class="s">"Transpose (2)"</span><span class="w"> </span><span class="na">to_port=</span><span class="s">"example set input"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;connect</span><span class="w"> </span><span class="na">from_op=</span><span class="s">"Transpose (2)"</span><span class="w"> </span><span class="na">from_port=</span><span class="s">"example set output"</span><span class="w"> </span><span class="na">to_op=</span><span class="s">"Guess Types (2)"</span><span class="w"> </span><span class="na">to_port=</span><span class="s">"example set input"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;connect</span><span class="w"> </span><span class="na">from_op=</span><span class="s">"Guess Types (2)"</span><span class="w"> </span><span class="na">from_port=</span><span class="s">"example set output"</span><span class="w"> </span><span class="na">to_port=</span><span class="s">"out 1"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;portSpacing</span><span class="w"> </span><span class="na">port=</span><span class="s">"source_in 1"</span><span class="w"> </span><span class="na">spacing=</span><span class="s">"0"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;portSpacing</span><span class="w"> </span><span class="na">port=</span><span class="s">"source_in 2"</span><span class="w"> </span><span class="na">spacing=</span><span class="s">"0"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;portSpacing</span><span class="w"> </span><span class="na">port=</span><span class="s">"sink_out 1"</span><span class="w"> </span><span class="na">spacing=</span><span class="s">"0"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;portSpacing</span><span class="w"> </span><span class="na">port=</span><span class="s">"sink_out 2"</span><span class="w"> </span><span class="na">spacing=</span><span class="s">"0"</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/process&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/operator&gt;</span>
+<span class="nt">&lt;/process&gt;</span>
+</pre></div>
+<p>Siguiente completamos los valores faltantes de los atributos numericos reales con la media, utilizando el operador <code>Replace Missing Values</code>.</p>
+<p><img alt="Valores Faltantes 02" src="../images/vf-02.png"/></p>
+<p>Terminamos removiendo todos los ejemplos restantes con valores faltantes. Esto lo hacemos con el operador <code>Filter Examples</code>.</p>
+<p><img alt="Valores Faltantes 03" src="../images/vf-03.png"/></p>
+<p>El resultado es un conjunto de datos que no tiene valores faltantes.</p>
 </div>
 </div>
 </div>
@@ -1854,10 +2544,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.6eac0284.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6eac0284.min.js"></script>
       
     
   </body>

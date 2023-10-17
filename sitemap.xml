@@ -121,7 +121,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/tratamiento-de-datos/01-estadistica/</loc>
+         <lastmod>2023-10-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/tratamiento-de-datos/01-rapidminer-tutoriales/</loc>
+         <lastmod>2023-10-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/tratamiento-de-datos/02-valores-faltantes/</loc>
+         <lastmod>2023-10-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/tratamiento-de-datos/03-seleccion-atributos/</loc>
+         <lastmod>2023-10-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/tratamiento-de-datos/04-datos-anomalos/</loc>
          <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
