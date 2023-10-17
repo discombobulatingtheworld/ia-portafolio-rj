@@ -2,132 +2,152 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/01_introduccion/01-definiciones/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/algoritmos-lineales/00-introduccion/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/01_introduccion/02-herramientas/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/algoritmos-lineales/01-descenso-gradiente/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/01_introduccion/03-crisp-dm/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/algoritmos-lineales/02-regresion-lineal/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/01_introduccion/04-comparacion-herramientas/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/algoritmos-lineales/03-regresion-logistica/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/01_introduccion/05-dataset/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/algoritmos-lineales/04-analisis-discriminante-lineal/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/01_introduccion/06-dataset-estadistica/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/algoritmos-no-lineales/00-introduccion/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/02_tratamiento_de_datos/00-introduccion/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/algoritmos-no-lineales/01-knn/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/02_tratamiento_de_datos/01-rapidminer-tutoriales/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/algoritmos-no-lineales/02-naive-bayes/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/03_algoritmos_lineales/00-introduccion/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/casos-de-estudio/altura-osea/01-introduccion/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/03_algoritmos_lineales/01-descenso-gradiente/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/casos-de-estudio/altura-osea/02-datos/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/03_algoritmos_lineales/02-regresion-lineal/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/casos-de-estudio/altura-osea/03-regresion-lineal-rapidminer/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/03_algoritmos_lineales/03-regresion-logistica/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/casos-de-estudio/altura-osea/04-regresion-lineal-python/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/03_algoritmos_lineales/04-analisis-discriminante-lineal/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/casos-de-estudio/enfermedad-coronaria/01-introduccion/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/04_algoritmos_no_lineales/00-introduccion/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/casos-de-estudio/enfermedad-coronaria/02-datos/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/04_algoritmos_no_lineales/01-knn/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/casos-de-estudio/enfermedad-coronaria/03-regresion-logistica-rapidminer/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/04_algoritmos_no_lineales/02-naive-bayes/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/casos-de-estudio/enfermedad-coronaria/04-regresion-logistica-python/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/05_validacion/00-introduccion/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/introduccion/01-definiciones/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/05_validacion/01-error-prueba-vs-entrenamiento/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/introduccion/02-herramientas/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/05_validacion/02-validacion-dividida/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/introduccion/03-crisp-dm/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/05_validacion/03-validacion-cruzada/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/introduccion/04-comparacion-herramientas/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/05_validacion/04-contaminacion-accidental/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/introduccion/05-dataset/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/06_casos_de_estudio/01-enfermedad-coronaria/01-introduccion/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/introduccion/06-dataset-estadistica/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/06_casos_de_estudio/01-enfermedad-coronaria/02-datos/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/tratamiento-de-datos/00-introduccion/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/06_casos_de_estudio/01-enfermedad-coronaria/03-regresion-logistica-rapidminer/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/tratamiento-de-datos/01-rapidminer-tutoriales/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/06_casos_de_estudio/01-enfermedad-coronaria/04-regresion-logistica-python/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/validacion/00-introduccion/</loc>
+         <lastmod>2023-10-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/validacion/01-error-prueba-vs-entrenamiento/</loc>
+         <lastmod>2023-10-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/validacion/02-validacion-dividida/</loc>
+         <lastmod>2023-10-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/validacion/03-validacion-cruzada/</loc>
+         <lastmod>2023-10-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://discombobulatingtheworld.github.io/ia-portafolio-rj/validacion/04-contaminacion-accidental/</loc>
+         <lastmod>2023-10-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
