@@ -15,6 +15,7 @@ nav:
     - tratamiento-de-datos\02-valores-faltantes.ipynb
     - tratamiento-de-datos\03-seleccion-atributos.ipynb
     - tratamiento-de-datos\04-datos-anomalos.ipynb
+    - tratamiento-de-datos\05-escalado.ipynb
   - Algoritmos Lineales: 
     - algoritmos-lineales\00-introduccion.ipynb
     - algoritmos-lineales\01-descenso-gradiente.ipynb
