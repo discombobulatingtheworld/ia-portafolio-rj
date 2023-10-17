@@ -1,5 +1,7 @@
 site_name: Portafolio de Machine Learning
 site_url: https://discombobulatingtheworld.github.io/ia-portafolio-rj/
+repo_url: https://github.com/discombobulatingtheworld/ia-portafolio-rj
+repo_name: discombobulatingtheworld/ia-portafolio-rj
 nav:
   - Home: index.md
   - Introducción:
@@ -54,4 +56,6 @@ theme:
     scheme: slate
     primary: deep purple
     accent: deep purple
+  icon:
+    repo: fontawesome/brands/github
 use_directory_urls: true
